@@ -1,0 +1,42 @@
+.d--flex {
+    display: flex;
+}
+.d--grid {
+    display: grid;
+}
+.p--relative {
+    position: relative;
+}
+.active {
+    background-color: $secondary;
+    padding: 4rem 1rem 1rem 1rem;
+}
+.active:visited {
+    color: $light;
+}
+.book--number {
+    padding: .5rem 1.5rem;
+    background-color: $primary;
+    color: $light;
+    font-weight: 600;
+}
+.cart--button {
+    cursor: pointer;
+    border: none;
+    padding: .5rem 1.5rem;
+    background-color: $secondary;
+    color: $light;
+    font-weight: 600;
+}
+.wishlist--button {
+    padding-top: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: $secondary;
+    font-weight: 600;
+    margin-left: .5rem;
+}
+.p--top {
+    margin-top: 2rem;
+}

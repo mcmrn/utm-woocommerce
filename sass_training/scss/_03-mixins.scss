@@ -1,0 +1,13 @@
+@mixin maxMediaQuery($width: 520px) {
+    @media screen and (max-width: $wdith) {
+        @content;
+    }
+}
+@mixin minMediaQuery($width: 520px) {
+    @media screen and (min-width: $wdith) {
+        @content;
+    }
+}
+@mixin transition($sec:0.5s, $easing: ease-in-out) {
+    transition: $sec $easing;
+}

@@ -1,0 +1,65 @@
+.banner {
+    padding: 3rem 0;
+    &__wrapper {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    &__text {
+        > * {
+            margin-bottom:2rem ;
+        }
+        width: 65%;
+        padding: 5rem 2rem;
+        color: $dark;
+        background-color: $light;
+        box-shadow: -.5rem .5rem 2rem -.99rem;
+        transform: translateX(20%);
+        h2 {
+            font-size: 6rem;
+            line-height: 1;
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        a {
+            color: $secondary;
+            font-weight: 600;
+        }
+    }
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+}
+.books {
+    background-color: #F6FBFF;
+    padding: 3rem 0 7rem 0;
+    &__lists {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+    }
+    &__item {
+        gap: 3rem;
+        align-items: center;
+    }
+    &__image {
+        img {
+            width: 20rem;
+        }
+    }
+    &__context {
+        > * {
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        a {
+            color: $secondary;
+            font-weight: 600;
+        }
+    }
+}

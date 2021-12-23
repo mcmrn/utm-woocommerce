@@ -1,0 +1,70 @@
+.header {
+    background-color: $primary;
+    color: $light;
+    padding: 1rem 1rem;
+    &__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        img {
+            width: 35rem;
+        }
+    }
+    &__log {
+        &__icons {
+            .fa-user {
+                margin-right: 2rem;
+            }
+            .fa-shopping-cart {
+                margin: 0 5rem;
+            }
+            a {
+                color: $light;
+                font-weight: 600;
+            }
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $light;
+                outline: 0;
+                color: white;
+                padding: .5rem;
+            }
+            ::placeholder {
+                text-align: right;
+                font-size: 1.6rem;
+                padding-right: 2rem;
+            }
+            .fa-search {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__nav {
+        a {
+            color: $primary;
+            text-transform: uppercase;
+        }
+        li {
+            margin: 0 2rem;
+        }
+    }
+    &__icons {
+        font-size: 2rem;
+        i {
+            margin-left:2rem;
+        }
+    }
+}
+.branding {
+    padding: 2rem;
+    color: $primary;
+}
+.footer {
+    background-color: $primary;
+    height: 4rem;
+}
