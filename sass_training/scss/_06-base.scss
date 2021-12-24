@@ -12,6 +12,8 @@ body {
     margin: 0 auto;
 }
 a {
+    position: relative;
+    top: .15rem;
     text-decoration: none;
     color: $dark;
 }

@@ -1,15 +1,16 @@
 .checkout {
     padding: 3rem 0;
     &__wrapper {
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
     }
     &__image {
         img {
-            width: 100%;
+            width: 80%;
         }
     }
     &__context {
+        line-height: 1.37;
         h2 {
             font-size: 3.5rem;
         }
@@ -33,32 +34,89 @@
             justify-content: space-between;
             span {
                 color: $secondary;
+                font-weight: 700;
+                margin: 0 .5rem;
             }
             input {
+                padding: 1rem;
                 width: 20%;
                 border: none;
                 text-align: center;
                 background-color: #DEDEDE;
             }
         }
+        &__details {
+            border-bottom: 1px solid #AAA8A8;
+        }
     }
     &__cart {
         span {
             font-weight: 700;
+        }
+        &__items {
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #AAA8A8;
+            border-top: 2px solid $primary;
+            img {
+                background-color: #DEDEDE;
+                width: 20%;
+            }
+            p {
+                color: #AAA8A8;
+                font-size: 1.4rem;
+            }
         }
         &__item {
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #AAA8A8;
             img {
+                background-color: #DEDEDE;
                 width: 20%;
+            }
+            p {
+                font-size: 1.4rem;
+                color: #AAA8A8;
             }
         }
         &__subtotal {
             justify-content: center;
+            border-bottom: 1px solid #AAA8A8;
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            span {
+                color: #AAA8A8;
+                font-weight: 400;
+            }
         }
         &__button {
+            padding-top: 2rem ;
             justify-content: space-evenly;
+        }
+    }
+}
+
+.bundle {
+    padding: 5rem 0;
+    background-color: #F6FBFF;
+    &__wrapper {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+    }
+    &__context {
+        > * {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            line-height: 1;
+        width: 99%;
+        font-size: 7rem;
+        }
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
         }
     }
 }

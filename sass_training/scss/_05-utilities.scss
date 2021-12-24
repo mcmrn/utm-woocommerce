@@ -40,3 +40,25 @@
 .p--top {
     margin-top: 2rem;
 }
+$sizes: 1, 2,3,4,5;
+
+@each $size in $sizes {
+    .mb--#{$size} {
+        margin-bottom: #{$size}rem;
+    }
+}
+@each $size in $sizes {
+    .mt--#{$size} {
+        margin-top: #{$size}rem;
+    }
+}
+@each $size in $sizes {
+    .pt--#{$size} {
+        padding-top: #{$size}rem;
+    }
+}
+@each $size in $sizes {
+    .pb--#{$size} {
+        padding-bottom: #{$size}rem;
+    }
+}

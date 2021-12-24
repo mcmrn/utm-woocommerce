@@ -59,7 +59,7 @@
 
     <section class="checkout">
         <div class="container">
-            <div class="chechout__wrapper d--flex">
+            <div class="checkout__wrapper d--flex">
                 <div class="checkout__image">
                     <img src="/dist/img/Book-1.png" alt="">
                     <img src="/dist/img/Group 8.png" alt="">
@@ -69,10 +69,10 @@
                         <span class="book--number">Book 1</span>
                         <p class="p--top">Unleash your Masterpiece</p>
                         <h2>Foundation for Life</h2>
-                        <p>by: Bob Clinkert</p>
+                        <p class="mb--1">by: Bob Clinkert</p>
                     </div>
                     <div class="checkout__context__price">
-                        <div class="checkout__context__rate d--flex">
+                        <div class="checkout__context__rate d--flex mb--2 mt--2">
                             <span>$70.00</span>
                             <ul>
                                 <i class="fas fa-star"></i>
@@ -84,13 +84,15 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nobis optio sint sed in
                             molestias similique porro distinctio laboriosam,</p>
-                        <div class="checkout__context__add d--flex">
+                        <div class="checkout__context__add d--flex mt--1">
                             <div>
                                 <span>-</span>
                                 <input type="text" value="1">
                                 <span>+</span>
                             </div>
-                            <button class="cart--button">Add to cart</button>
+                            <div>
+                                <button class="cart--button">Add to cart</button>
+                            </div>
                         </div>
                         <i class="fas fa-heart"></i>
                         <button class="wishlist--button">Add to wishlist</button>
@@ -98,15 +100,17 @@
                 </div>
 
                 <div class="checkout__cart">
-                    <span>Cart</span>
-                    <div class="checkout__cart__item d--flex">
+                    <div class="mb--3">
+                        <span>Cart</span>
+                    </div>
+                    <div class="checkout__cart__items d--flex pt--2 pb--1">
                         <div>
                             <p>Taking the Lead</p>
                             <p>1 x $70.00</p>
                         </div>
                         <img src="/dist/img/Book-1.png" alt="">
                     </div>
-                    <div class="checkout__cart__item d--flex">
+                    <div class="checkout__cart__item d--flex pt--2 pb--1">
                         <div>
                             <p>Taking the Lead</p>
                             <p>1 x $70.00</p>
@@ -125,6 +129,25 @@
             </div>
         </div>
     </section>
+
+    <section class="bundle">
+        <div class="container">
+            <div class="bundle__wrapper d--flex">
+                <div class="bundle__image">
+                    <img src="/dist/img/Group 5.png" alt="">
+                </div>
+                <div class="bundle__context">
+                    <span>Wake up the inner you</span>
+                    <h2>Unleash Now!</h2>
+                    <p>Books come cheaper when you buy in bundle</p>
+                    <button class="cart--button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
 </body>
 
 </html>
