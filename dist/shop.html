@@ -21,11 +21,12 @@
                 <div class="header__log">
                     <div class="header__log__icons p--relative">
                         <i class="fas fa-user"></i>
-                        <a href="#">Login</a> /
-                        <a href="#">Register</a>
+                        <a href="#">Login / </a>
+                        <a href="#"> Register</a>
                         <i class="fas fa-shopping-cart"></i>
                         <input type="text" class="p--relative" placeholder="search">
                         <i class="fas fa-search"></i>
+                        <i id="toggle" class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>
@@ -34,6 +35,40 @@
     <header class="branding">
         <div class="container">
             <div class="header__wrapper d--flex">
+
+                <!-- Mobile View Nav -->
+                
+                <div class="header__menu">
+                    <div class="header__menu__logo">
+                        <img src="/dist/img/logo-open-source-white.png" alt="">
+                    </div>
+                    
+                    <div class="header__menu__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__menu__icons d--flex">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <footer class="footer__register">
+                        <i class="fas fa-user"></i>
+                        <a href="#">Login /</a>
+                        <a href="#"> Register</a>
+                    </footer>
+                </div>
+
+                <!-- Mobile View Nav -->
+
+
                 <div class="header__logo">
                     <img src="/dist/img/logo-open-source-white.png" alt="">
                 </div>
@@ -72,12 +107,6 @@
                             <img class="items--image" src="/dist/img/Book-3.png" alt="" onclick="currentImg(3)">
                             <img class="items--image" src="/dist/img/Book-4.png" alt="" onclick="currentImg(4)">
                     </div>
-
-
-                    
-
-
-
 
                 </div>
                 <div class="checkout__context">

@@ -337,6 +337,26 @@
   margin-top: 5rem;
 }
 
+.ml--1 {
+  margin-left: 1rem;
+}
+
+.ml--2 {
+  margin-left: 2rem;
+}
+
+.ml--3 {
+  margin-left: 3rem;
+}
+
+.ml--4 {
+  margin-left: 4rem;
+}
+
+.ml--5 {
+  margin-left: 5rem;
+}
+
 .pt--1 {
   padding-top: 1rem;
 }
@@ -375,6 +395,26 @@
 
 .pb--5 {
   padding-bottom: 5rem;
+}
+
+.pr--1 {
+  padding-right: 1rem;
+}
+
+.pr--2 {
+  padding-right: 2rem;
+}
+
+.pr--3 {
+  padding-right: 3rem;
+}
+
+.pr--4 {
+  padding-right: 4rem;
+}
+
+.pr--5 {
+  padding-right: 5rem;
 }
 
 html {
@@ -533,12 +573,35 @@ ul {
   gap: 5rem;
 }
 
+@media screen and (max-width: 520px) {
+  .checkout__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+
 .checkout__image {
   width: 80%;
 }
 
+@media screen and (max-width: 520px) {
+  .checkout__image {
+    width: 100%;
+  }
+}
+
 .checkout__image img {
   width: 70%;
+}
+
+@media screen and (max-width: 520px) {
+  .checkout__image img {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .checkout__image__slider {
@@ -551,6 +614,12 @@ ul {
   width: 10%;
   background-color: #DEDEDE;
   cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .checkout__image__slider img {
+    width: 20%;
+  }
 }
 
 .checkout__context {
@@ -683,6 +752,19 @@ ul {
   padding: 0 5rem;
 }
 
+@media screen and (max-width: 520px) {
+  .bundle__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.bundle__image img {
+  width: 100%;
+}
+
 .bundle__context > * {
   margin-bottom: 2rem;
 }
@@ -709,6 +791,14 @@ ul {
   padding: 3rem 10rem;
 }
 
+@media screen and (max-width: 520px) {
+  .checking__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
+
 .checking__details form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -721,6 +811,12 @@ ul {
 
 .checking__details form input {
   padding: .5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .checking__details form input {
+    width: 100%;
+  }
 }
 
 .checking__details__between {
