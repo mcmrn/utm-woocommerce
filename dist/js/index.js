@@ -1,16 +1,17 @@
-$(document).ready(function() {
-    $('.minus').click(function () {
-        var $input = $(this).parent().find('input');
-        var count = parseInt($input.val()) - 1;
-        count = count < 1 ? 1 : count;
-        $input.val(count);
-        $input.change();
-        return false;
-    });
-    $('.plus').click(function () {
-        var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
-        $input.change();
-        return false;
-    });
- });
+function currentImg(n) {
+    showImg(slideIndex = n);
+  }
+  
+  function showImg(n) {
+    var i;
+    var x = document.getElementsByClassName("active--image");
+    var item = document.getElementsByClassName("items--image");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < item.length; i++) {
+    x[slideIndex-1].style.display = "block";
+    }
+  }

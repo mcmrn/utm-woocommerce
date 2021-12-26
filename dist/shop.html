@@ -61,8 +61,24 @@
         <div class="container">
             <div class="checkout__wrapper d--flex">
                 <div class="checkout__image">
-                    <img src="/dist/img/Book-1.png" alt="">
-                    <img src="/dist/img/Group 8.png" alt="">
+                    <img class="active--image" src="/dist/img/Book-1.png" alt="">
+                    <img class="active--image d--none" src="/dist/img/Book-2.png" alt="">
+                    <img class="active--image d--none" src="/dist/img/Book-3.png" alt="">
+                    <img class="active--image d--none" src="/dist/img/Book-4.png" alt="">
+
+                    <div class="checkout__image__slider d--flex">
+                            <img class="items--image" src="/dist/img/Book-1.png" alt="" onclick="currentImg(1)">
+                            <img class="items--image" src="/dist/img/Book-2.png" alt="" onclick="currentImg(2)">
+                            <img class="items--image" src="/dist/img/Book-3.png" alt="" onclick="currentImg(3)">
+                            <img class="items--image" src="/dist/img/Book-4.png" alt="" onclick="currentImg(4)">
+                    </div>
+
+
+                    
+
+
+
+
                 </div>
                 <div class="checkout__context">
                     <div class="checkout__context__details">
@@ -145,9 +161,11 @@
             </div>
         </div>
     </section>
-
+      
     <footer class="footer">
     </footer>
+
+    <script src="/dist/js/index.js"></script>
 </body>
 
 </html>
