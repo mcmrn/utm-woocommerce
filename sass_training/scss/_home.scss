@@ -1,12 +1,21 @@
 .banner {
     padding: 3rem 0;
+    @include maxMediaQuery {
+        padding-top: unset;
+    }
     &__wrapper {
-        grid-template-columns: 1fr 1fr;
         align-items: center;
+        @include maxMediaQuery {
+            flex-direction: column-reverse;
+        }
     }
     &__text {
         > * {
             margin-bottom:2rem ;
+        }
+        @include maxMediaQuery {
+            width: unset;
+            transform: unset;
         }
         width: 65%;
         padding: 5rem 2rem;
@@ -39,10 +48,16 @@
     &__lists {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5rem;
+        @include maxMediaQuery {
+            grid-template-columns: 1fr;
+        }
     }
     &__item {
         gap: 3rem;
         align-items: center;
+        @include maxMediaQuery {
+            flex-direction: column;
+        }
     }
     &__image {
         img {

@@ -9,7 +9,53 @@
 .header {
   background-color: #040069;
   color: white;
-  padding: 1rem 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    padding: 2rem;
+  }
+}
+
+.header__menu.show {
+  left: 0;
+}
+
+.header__menu {
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.header__menu ul {
+  margin: 6rem;
+}
+
+.header__menu a {
+  color: #040069;
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.header__menu__logo img {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.header__menu__icons {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2rem;
 }
 
 .header__wrapper {
@@ -22,20 +68,44 @@
 }
 
 .header__logo img {
-  width: 35rem;
+  width: 73%;
+}
+
+@media screen and (max-width: 520px) {
+  .header__logo img {
+    display: none;
+  }
 }
 
 .header__log__icons .fa-user {
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .header__log__icons .fa-user {
+    display: none;
+  }
+}
+
 .header__log__icons .fa-shopping-cart {
   margin: 0 5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header__log__icons .fa-shopping-cart {
+    display: none;
+  }
 }
 
 .header__log__icons a {
   color: white;
   font-weight: 600;
+}
+
+@media screen and (max-width: 520px) {
+  .header__log__icons a {
+    display: none;
+  }
 }
 
 .header__log__icons input {
@@ -45,6 +115,12 @@
   outline: 0;
   color: white;
   padding: .5rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header__log__icons input {
+    display: none;
+  }
 }
 
 .header__log__icons ::-webkit-input-placeholder {
@@ -79,9 +155,39 @@
           transform: translateY(-50%);
 }
 
+@media screen and (max-width: 520px) {
+  .header__log__icons .fa-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header__log__icons .fa-bars {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .header__log__icons .fa-bars {
+    display: none;
+  }
+}
+
 .header__nav a {
   color: #040069;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 520px) {
+  .header__nav a {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .header__nav i {
+    display: none;
+  }
 }
 
 .header__nav li {
@@ -90,6 +196,12 @@
 
 .header__icons {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header__icons {
+    display: none;
+  }
 }
 
 .header__icons i {
@@ -101,9 +213,22 @@
   color: #040069;
 }
 
+@media screen and (max-width: 520px) {
+  .branding {
+    padding: unset;
+  }
+}
+
 .footer {
   background-color: #040069;
   height: 4rem;
+}
+
+.footer__register {
+  position: absolute;
+  left: 15%;
+  top: 90%;
+  font-weight: 700;
 }
 
 .d--flex {
@@ -282,12 +407,25 @@ ul {
   padding: 3rem 0;
 }
 
+@media screen and (max-width: 520px) {
+  .banner {
+    padding-top: unset;
+  }
+}
+
 .banner__wrapper {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 520px) {
+  .banner__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .banner__text {
@@ -303,6 +441,14 @@ ul {
 
 .banner__text > * {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .banner__text {
+    width: unset;
+    -webkit-transform: unset;
+            transform: unset;
+  }
 }
 
 .banner__text h2 {
@@ -335,11 +481,27 @@ ul {
   grid-gap: 5rem;
 }
 
+@media screen and (max-width: 520px) {
+  .books__lists {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .books__item {
   gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 520px) {
+  .books__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .books__image img {

@@ -1,3 +1,4 @@
+//SHOP IMAGE SLIDER
 function currentImg(n) {
     showImg(slideIndex = n);
   }
@@ -15,3 +16,10 @@ function currentImg(n) {
     x[slideIndex-1].style.display = "block";
     }
   }
+
+//MOBILE NAV BURGER BUTTON
+
+const toggle = document.querySelector('#toggle');
+const menu = document.querySelector('.header__menu');
+
+toggle.addEventListener('click', () => menu.classList.toggle('show'))

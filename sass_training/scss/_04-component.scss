@@ -1,27 +1,75 @@
 .header {
     background-color: $primary;
     color: $light;
-    padding: 1rem 1rem;
+    padding: 1rem;
+    @include maxMediaQuery {
+        padding: 2rem;
+    }
+    &__menu.show {
+        left: 0;
+    }
+    &__menu {
+        background-color: $light;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -100%;
+        transition: .5s ease;
+        width: 70%;
+        height: 100%;
+        text-align: center;
+        overflow-x: hidden;
+        ul {
+            margin: 6rem;
+        }
+        a {
+            color: $primary;
+            font-size: 2rem;
+            line-height: 3;
+        }
+       &__logo {
+           img {
+               padding: 1rem 0;
+               width: 100%;
+           }
+       }
+       &__icons {
+        justify-content: space-evenly;
+        font-size: 2rem;
+       }
+    }
     &__wrapper {
         justify-content: space-between;
         align-items: center;
     }
     &__logo {
         img {
-            width: 35rem;
+            width: 73%;
+            @include maxMediaQuery {
+                display: none;
+            }
         }
     }
     &__log {
         &__icons {
             .fa-user {
                 margin-right: 2rem;
+                @include maxMediaQuery {
+                    display: none;
+                }
             }
             .fa-shopping-cart {
                 margin: 0 5rem;
+                @include maxMediaQuery {
+                    display: none;
+                }
             }
             a {
                 color: $light;
                 font-weight: 600;
+                @include maxMediaQuery {
+                    display: none;
+                }
             }
             input {
                 background-color: transparent;
@@ -30,6 +78,9 @@
                 outline: 0;
                 color: white;
                 padding: .5rem;
+                @include maxMediaQuery {
+                    display: none;
+                }
             }
             ::placeholder {
                 text-align: right;
@@ -41,6 +92,17 @@
                 right: 0;
                 top: 50%;
                 transform: translateY(-50%);
+                @include maxMediaQuery {
+                    display: none;
+                }
+            }
+            .fa-bars {
+                @include maxMediaQuery {
+                    font-size: 2.5rem;
+                }
+                @include minMediaQuery {
+                    display: none;
+                }
             }
         }
     }
@@ -48,12 +110,24 @@
         a {
             color: $primary;
             text-transform: uppercase;
+            @include maxMediaQuery {
+                display: none;
+            }
+        }
+        
+        @include minMediaQuery {
+            i {
+                display: none;
+            }
         }
         li {
             margin: 0 2rem;
         }
     }
     &__icons {
+        @include maxMediaQuery {
+            display: none;
+        }
         font-size: 2rem;
         i {
             margin-left:2rem;
@@ -63,8 +137,17 @@
 .branding {
     padding: 2rem;
     color: $primary;
+    @include maxMediaQuery {
+        padding: unset;
+    }
 }
 .footer {
     background-color: $primary;
     height: 4rem;
+    &__register {
+        position: absolute;
+        left: 15%;
+        top: 90%;
+        font-weight: 700;
+    }
 }
