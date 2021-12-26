@@ -117,13 +117,21 @@
   display: grid;
 }
 
+.d--block {
+  display: block;
+}
+
 .p--relative {
   position: relative;
 }
 
+.p--absolute {
+  position: absolute;
+}
+
 .active {
   background-color: #6695BD;
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 3.9rem 1rem 1rem 1rem;
 }
 
 .active:visited {
@@ -258,7 +266,6 @@ body {
 
 a {
   position: relative;
-  top: .15rem;
   text-decoration: none;
   color: #262626;
 }
@@ -510,5 +517,107 @@ ul {
 .bundle__context p {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.checking {
+  padding: 3rem 0;
+}
+
+.checking__wrapper {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  padding: 3rem 10rem;
+}
+
+.checking__details form {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checking__details form input {
+  padding: .5rem;
+}
+
+.checking__details__between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checking__order h3 {
+  font-weight: 500;
+}
+
+.checking__order__details {
+  padding: 0 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checking__order__item > * {
+  border-bottom: 1px solid #AAA8A8;
+  padding: 1rem;
+}
+
+.checking__order__item p {
+  color: #AAA8A8;
+}
+
+.checking__order__shipping {
+  background-color: #F6FBFF;
+  padding: 2rem 0;
+}
+
+.checking__order__shipping p {
+  font-weight: 600;
+}
+
+.checking__order__payment {
+  background-color: #F6FBFF;
+  padding: 2rem 0;
+}
+
+.checking__order__payment p {
+  padding: 2rem;
+}
+
+.checking__order__payment label {
+  margin-left: 1rem;
+  color: white;
+}
+
+.checking__order__check {
+  padding: .5rem 2rem;
+}
+
+.checking__order__check > * {
+  background-color: #555C63;
+  padding: .5rem .5rem;
+}
+
+.checking__order__choose {
+  padding: .5rem 2rem;
+}
+
+.checking__order__choose > * {
+  background-color: #A9B5C1;
+  padding: .5rem .5rem;
+}
+
+.checking__order__button {
+  padding: 1rem 2rem;
+}
+
+.checking__order__button a {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

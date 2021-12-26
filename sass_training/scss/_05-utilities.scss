@@ -4,12 +4,18 @@
 .d--grid {
     display: grid;
 }
+.d--block {
+    display: block;
+}
 .p--relative {
     position: relative;
 }
+.p--absolute {
+    position: absolute;
+}
 .active {
     background-color: $secondary;
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 3.9rem 1rem 1rem 1rem;
 }
 .active:visited {
     color: $light;

@@ -1,0 +1,78 @@
+.checking {
+    padding: 3rem 0;
+    &__wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10rem;
+        padding: 3rem 10rem;
+    }
+    &__details {
+        form {
+            justify-content:space-between;
+            flex-direction: column;
+            input {
+                padding: .5rem;
+            }
+        }
+        &__between {
+            justify-content: space-between;
+        }
+    }
+    &__order {
+        h3 {
+            font-weight: 500;
+        }
+        &__details {
+            padding: 0 2rem;
+            justify-content: space-between;
+        }
+        &__item {
+            > * {
+            border-bottom: 1px solid #AAA8A8;
+            padding: 1rem;
+            }
+            p {
+                color: #AAA8A8;
+            }
+        }
+        &__shipping {
+            background-color: #F6FBFF;
+            padding: 2rem 0;
+            p {
+                font-weight: 600;
+            }
+        }
+        &__payment {
+            background-color: #F6FBFF;
+            padding: 2rem 0;
+            p {
+                padding: 2rem;
+            }
+            label {
+                margin-left: 1rem;
+                color: $light;
+            }
+        }
+        &__check {
+            padding: .5rem 2rem;
+            > * {
+            background-color: #555C63;
+            padding: .5rem .5rem;
+            }
+        }
+        &__choose {
+            > * {
+            background-color: #A9B5C1;
+            padding: .5rem .5rem;
+            }
+            padding: .5rem 2rem;
+        }
+        &__button {
+            padding: 1rem 2rem;
+                a {
+                    width: 100%;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+        }
+    }
+}
