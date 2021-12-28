@@ -181,7 +181,7 @@
                             <form action="" class="">
                                 <div class="checking__order__check">
                                     <div>
-                                        <input type="radio" value="Check Payments" checked>
+                                        <input type="radio" id="cp" name="cp" value="Check Payments" checked>
                                         <label for="payments">Check for Payments</label>
                                     </div>
                                 </div>
@@ -191,12 +191,12 @@
 
                                 <div class="checking__order__choose">
                                     <div class="checking__order__cod mb--1">
-                                        <input type="radio" value="Cash on Delivery">
+                                        <input type="radio" id="cod" name="payment" value="Cash on Delivery">
                                         <label for="cod">Cash on Delivery</label>
-                                    </div>
+                                    </div> 
                                     <div class="checking__order__credit">
-                                        <input type="radio" value="Credit Card">
-                                        <label for="cod">Credit Card</label>
+                                        <input type="radio" id="cc" name="payment" value="Credit Card">
+                                        <label for="cc">Credit Card</label>
                                     </div>
                                 </div>
                             </form>
@@ -209,7 +209,9 @@
         </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+    </footer>
 
     <script src="/dist/js/index.js"></script>
 </body>

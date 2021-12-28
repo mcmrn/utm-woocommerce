@@ -34,6 +34,6 @@ function decrement() {
 
 //WISHLIST BUTTON
 
-function wishlist(x) {
-  x.classList.toggle("fa-heart");
-}
+// function wishlist(x) {
+//   x.classList.toggle("fa-heart");
+// }
