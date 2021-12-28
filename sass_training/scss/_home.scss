@@ -34,6 +34,14 @@
         a {
             color: $secondary;
             font-weight: 600;
+            transition: .5s ease;
+        }
+        a:hover {
+            padding-right: 1rem;
+        }
+        span {
+            color: $secondary;
+            font-weight: 600;
         }
     }
     &__image {
@@ -74,6 +82,13 @@
         }
         a {
             color: $secondary;
+            font-weight: 600;
+            transition: .5s ease;
+        }
+        a:hover {
+            padding-right: 1rem;
+        }
+        span {
             font-weight: 600;
         }
     }

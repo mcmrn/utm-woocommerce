@@ -23,3 +23,17 @@ const toggle = document.querySelector('#toggle');
 const menu = document.querySelector('.header__menu');
 
 toggle.addEventListener('click', () => menu.classList.toggle('show'))
+
+//PLUS AND MINUS CART
+function increment() {
+  document.getElementById("input").stepUp();
+}
+function decrement() {
+  document.getElementById("input").stepDown();
+}
+
+//WISHLIST BUTTON
+
+function wishlist(x) {
+  x.classList.toggle("fa-heart");
+}

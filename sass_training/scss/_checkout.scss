@@ -14,7 +14,7 @@
             justify-content:space-between;
             flex-direction: column;
             input {
-                padding: .5rem;
+                padding: 1rem;
                 @include maxMediaQuery {
                     width: 100%;
                 }
@@ -22,6 +22,15 @@
         }
         &__between {
             justify-content: space-between;
+            @include maxMediaQuery {
+                display: block;
+            }
+            .pr--1 {
+                @include maxMediaQuery {
+                    padding: unset;
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
     &__order {

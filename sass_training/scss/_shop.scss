@@ -57,14 +57,17 @@
         &__add {
             justify-content: space-between;
             span {
+                font-size: 2rem;
                 color: $secondary;
                 font-weight: 700;
                 margin: 0 .5rem;
+                cursor: pointer;
             }
             input {
                 padding: 1rem;
-                width: 20%;
                 border: none;
+                outline: 0;
+                width: 20%;
                 text-align: center;
                 background-color: #DEDEDE;
             }
@@ -76,6 +79,7 @@
     &__cart {
         span {
             font-weight: 700;
+            color: $primary;
         }
         &__items {
             justify-content: space-between;

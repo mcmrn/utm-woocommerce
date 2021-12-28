@@ -49,6 +49,12 @@
 .p--top {
     margin-top: 2rem;
 }
+.secondary {
+    color: $secondary;
+}
+.primary {
+    color: $primary;
+}
 $sizes: 1, 2,3,4,5;
 
 @each $size in $sizes {

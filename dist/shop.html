@@ -37,12 +37,12 @@
             <div class="header__wrapper d--flex">
 
                 <!-- Mobile View Nav -->
-                
+
                 <div class="header__menu">
                     <div class="header__menu__logo">
                         <img src="/dist/img/logo-open-source-white.png" alt="">
                     </div>
-                    
+
                     <div class="header__menu__nav">
                         <nav>
                             <ul>
@@ -53,11 +53,11 @@
                         </nav>
                     </div>
                     <div class="header__menu__icons d--flex">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fas fa-globe"></i>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fas fa-globe"></i></a>
                     </div>
                     <footer class="footer__register">
                         <i class="fas fa-user"></i>
@@ -82,11 +82,11 @@
                     </nav>
                 </div>
                 <div class="header__icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fas fa-globe"></i>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
                 </div>
             </div>
         </div>
@@ -96,16 +96,16 @@
         <div class="container">
             <div class="checkout__wrapper d--flex">
                 <div class="checkout__image">
-                    <img class="active--image" src="/dist/img/Book-1.png" alt="">
+                    <img class="active--image d--block" src="/dist/img/Book-1.png" alt="">
                     <img class="active--image d--none" src="/dist/img/Book-2.png" alt="">
                     <img class="active--image d--none" src="/dist/img/Book-3.png" alt="">
                     <img class="active--image d--none" src="/dist/img/Book-4.png" alt="">
 
                     <div class="checkout__image__slider d--flex">
-                            <img class="items--image" src="/dist/img/Book-1.png" alt="" onclick="currentImg(1)">
-                            <img class="items--image" src="/dist/img/Book-2.png" alt="" onclick="currentImg(2)">
-                            <img class="items--image" src="/dist/img/Book-3.png" alt="" onclick="currentImg(3)">
-                            <img class="items--image" src="/dist/img/Book-4.png" alt="" onclick="currentImg(4)">
+                        <img class="items--image" src="/dist/img/Book-1.png" alt="" onclick="currentImg(1)">
+                        <img class="items--image" src="/dist/img/Book-2.png" alt="" onclick="currentImg(2)">
+                        <img class="items--image" src="/dist/img/Book-3.png" alt="" onclick="currentImg(3)">
+                        <img class="items--image" src="/dist/img/Book-4.png" alt="" onclick="currentImg(4)">
                     </div>
 
                 </div>
@@ -131,16 +131,18 @@
                             molestias similique porro distinctio laboriosam,</p>
                         <div class="checkout__context__add d--flex mt--1">
                             <div>
-                                <span>-</span>
-                                <input type="text" value="1">
-                                <span>+</span>
+                                <span onclick="decrement()">-</span>
+                                <input id="input" type="number" value="1" min="0">
+                                <span onclick="increment()">+</span>
                             </div>
                             <div>
                                 <button class="cart--button">Add to cart</button>
                             </div>
                         </div>
-                        <i class="fas fa-heart"></i>
-                        <button class="wishlist--button">Add to wishlist</button>
+                        <div class="checkout__context__wishlist">
+                            <i class="fas fa-heart"></i>
+                            <button class="wishlist--button">Add to wishlist</button>
+                        </div>
                     </div>
                 </div>
 
@@ -190,7 +192,7 @@
             </div>
         </div>
     </section>
-      
+
     <footer class="footer">
     </footer>
 
