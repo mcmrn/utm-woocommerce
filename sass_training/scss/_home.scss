@@ -1,11 +1,11 @@
 .banner {
-    padding: 3rem 0;
-    @include maxMediaQuery {
-        padding-top: unset;
+    padding: 3rem 2rem;
+    @include maxMQ768 {
+        padding: unset;
     }
     &__wrapper {
         align-items: center;
-        @include maxMediaQuery {
+        @include maxMQ768 {
             flex-direction: column-reverse;
         }
     }
@@ -13,11 +13,14 @@
         > * {
             margin-bottom:2rem ;
         }
-        @include maxMediaQuery {
+        @include maxMQ768 {
             width: unset;
-            transform: unset;
+            transform: translateY(-20%);
         }
-        width: 65%;
+        @include maxMQ821 {
+            padding: 3rem 1rem;
+        }
+        width: 55%;
         padding: 5rem 2rem;
         color: $dark;
         background-color: $light;
@@ -26,6 +29,12 @@
         h2 {
             font-size: 6rem;
             line-height: 1;
+            @include maxMQ1024 {
+                font-size: 5rem;
+            }
+            @include maxMQ821 {
+                font-size: 4rem;
+            }
         }
         p {
             text-transform: uppercase;
@@ -52,24 +61,26 @@
 }
 .books {
     background-color: #F6FBFF;
-    padding: 3rem 0 7rem 0;
+    padding: 3rem 2rem 7rem 2rem;
     &__lists {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5rem;
-        @include maxMediaQuery {
+        @include maxMQ768{
+            grid-template-columns: 1fr;
+        }
+        @include maxMQ1024 {
             grid-template-columns: 1fr;
         }
     }
     &__item {
         gap: 3rem;
+        justify-content: center;
         align-items: center;
-        @include maxMediaQuery {
+        @include maxMQ520 {
             flex-direction: column;
         }
-    }
-    &__image {
-        img {
-            width: 20rem;
+        @include maxMQ1024 {
+            justify-content: space-evenly;
         }
     }
     &__context {

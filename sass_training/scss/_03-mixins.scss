@@ -1,9 +1,35 @@
-@mixin maxMediaQuery($width: 520px) {
+@mixin maxMQ520($width: 520px) {
     @media screen and (max-width: $width) {
         @content;
     }
 }
-@mixin minMediaQuery($width: 520px) {
+@mixin maxMQ768($width: 768px) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin maxMQ821($width: 821px) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin maxMQ1024($width: 1024px) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin minMQ480($width: 480px) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+@mixin minMQ768($width: 769px) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+@mixin minMQ1024($width: 1024px) {
     @media screen and (min-width: $width) {
         @content;
     }

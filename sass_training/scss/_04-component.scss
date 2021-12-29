@@ -2,7 +2,7 @@
     background-color: $primary;
     color: $light;
     padding: 1rem;
-    @include maxMediaQuery {
+    @include maxMQ768 {
         padding: 2rem;
     }
     &__menu.show {
@@ -45,7 +45,7 @@
     &__logo {
         img {
             width: 73%;
-            @include maxMediaQuery {
+            @include maxMQ768 {
                 display: none;
             }
         }
@@ -54,20 +54,20 @@
         &__icons {
             .fa-user {
                 margin-right: 2rem;
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     display: none;
                 }
             }
             .fa-shopping-cart {
                 margin: 0 5rem;
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     display: none;
                 }
             }
             a {
                 color: $light;
                 font-weight: 600;
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     display: none;
                 }
             }
@@ -78,7 +78,7 @@
                 outline: 0;
                 color: white;
                 padding: .5rem;
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     display: none;
                 }
             }
@@ -92,15 +92,15 @@
                 right: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     display: none;
                 }
             }
             .fa-bars {
-                @include maxMediaQuery {
+                @include maxMQ768 {
                     font-size: 2.5rem;
                 }
-                @include minMediaQuery {
+                @include minMQ768 {
                     display: none;
                 }
             }
@@ -110,12 +110,12 @@
         a {
             color: $primary;
             text-transform: uppercase;
-            @include maxMediaQuery {
+            @include maxMQ768 {
                 display: none;
             }
         }
         
-        @include minMediaQuery {
+        @include minMQ768 {
             i {
                 display: none;
             }
@@ -125,22 +125,22 @@
         }
     }
     &__icons {
-        @include maxMediaQuery {
-            display: none;
+        @include maxMQ768 {
+            font-size: 1.5rem;
         }
         font-size: 2rem;
         i {
             margin-left:2rem;
         }
         a {
-            color: $primary;
+            color: $light;
         }
     }
 }
 .branding {
     padding: 2rem;
     color: $primary;
-    @include maxMediaQuery {
+    @include maxMQ768 {
         padding: unset;
     }
 }
@@ -148,9 +148,10 @@
     background-color: $primary;
     height: 4rem;
     &__register {
-        position: absolute;
-        left: 15%;
-        top: 90%;
+        justify-content: center;
         font-weight: 700;
+        // height: 100vh;
+        top: 40%;
+        position: relative;
     }
 }

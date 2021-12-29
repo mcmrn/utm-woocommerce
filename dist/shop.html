@@ -14,8 +14,12 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper d--flex">
-                <div class="header__text">
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class="header__icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
                 </div>
 
                 <div class="header__log">
@@ -24,8 +28,6 @@
                         <a href="#">Login / </a>
                         <a href="#"> Register</a>
                         <i class="fas fa-shopping-cart"></i>
-                        <input type="text" class="p--relative" placeholder="search">
-                        <i class="fas fa-search"></i>
                         <i id="toggle" class="fas fa-bars"></i>
                     </div>
                 </div>
@@ -61,8 +63,8 @@
                     </div>
                     <footer class="footer__register">
                         <i class="fas fa-user"></i>
-                        <a href="#">Login /</a>
-                        <a href="#"> Register</a>
+                        <a class="ml--2" href="#">Login</a> /
+                        <a href="#">Register</a>
                     </footer>
                 </div>
 
@@ -81,20 +83,13 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header__icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fas fa-globe"></i></a>
-                </div>
             </div>
         </div>
     </header>
 
     <section class="checkout">
         <div class="container">
-            <div class="checkout__wrapper d--flex">
+            <div class="checkout__wrapper d--grid">
                 <div class="checkout__image">
                     <img class="active--image d--block" src="/dist/img/Book-1.png" alt="">
                     <img class="active--image d--none" src="/dist/img/Book-2.png" alt="">
@@ -140,7 +135,7 @@
                             </div>
                         </div>
                         <div class="checkout__context__wishlist">
-                            <i class="fas fa-heart"></i>
+                            <i class="fas">&#xf004;</i>
                             <button class="wishlist--button">Add to wishlist</button>
                         </div>
                     </div>
