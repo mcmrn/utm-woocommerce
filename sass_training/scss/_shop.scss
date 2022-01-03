@@ -1,11 +1,15 @@
 .checkout {
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     &__wrapper {
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: 5rem;
         @include maxMQ768 {
+            display: flex;
             flex-direction: column;
             padding: 0 1rem;
+        }
+        @include maxMQ963 {
+            grid-template-columns: 1fr;
         }
     }
     &__image {
@@ -13,6 +17,7 @@
             width: 100%;
         }
         img {
+            width: 100%;
             @include maxMQ768 {
                 width: 100%;
                 padding: 0 1rem;
@@ -87,6 +92,9 @@
             img {
                 background-color: #DEDEDE;
                 width: 20%;
+                @include maxMQ963 {
+                    width: 10%;
+                }
             }
             p {
                 color: #AAA8A8;
@@ -99,6 +107,9 @@
             img {
                 background-color: #DEDEDE;
                 width: 20%;
+                @include maxMQ963 {
+                    width: 10%;
+                }
             }
             p {
                 color: #AAA8A8;

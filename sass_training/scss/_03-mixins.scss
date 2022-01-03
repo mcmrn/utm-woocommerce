@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin maxMQ963($width: 963px) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
 @mixin maxMQ821($width: 821px) {
     @media screen and (max-width: $width) {
         @content;

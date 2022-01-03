@@ -8,14 +8,22 @@
             grid-template-columns: 1fr;
             padding: 0 1rem;
         }
+        @include maxMQ963 {
+            grid-template-columns: 1fr;
+            padding: 0 1rem;
+        }
     }
     &__details {
         form {
-            justify-content:space-between;
+            justify-content:center;
             flex-direction: column;
+            
             input {
                 padding: 1rem;
                 @include maxMQ768 {
+                    width: 100%;
+                }
+                @include maxMQ963 {
                     width: 100%;
                 }
             }
@@ -25,8 +33,15 @@
             @include maxMQ768 {
                 display: block;
             }
+            @include maxMQ963 {
+                display: block;
+            }
             .pr--1 {
                 @include maxMQ768 {
+                    padding: unset;
+                    margin-bottom: 2rem;
+                }
+                @include maxMQ963 {
                     padding: unset;
                     margin-bottom: 2rem;
                 }
