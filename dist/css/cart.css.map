@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,cAAU,CAAC;EACP,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AACA,AACG,WADG,CACH,EAAE,CAAC,GAAG,CAAC;EACH,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "../../sass_training/scss/cart.scss"
+    ],
+    "names": [],
+    "file": "cart.css"
+}

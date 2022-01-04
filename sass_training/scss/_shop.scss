@@ -1,7 +1,7 @@
 .checkout {
     padding: 3rem 2rem;
     &__wrapper {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-gap: 5rem;
         @include maxMQ768 {
             display: flex;

@@ -1,0 +1,37 @@
+.cart {
+    &__wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    &__product {
+        align-items: center;
+        img {
+            width: 15%;
+            margin-right: 5rem;
+        }
+    }
+    &__quantity {
+        text-align: center;
+        button {
+            font-size: 2rem;
+            border: none;
+            background-color: transparent;
+            color: $secondary;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        input {
+            padding: 1rem;
+            border: none;
+            outline: 0;
+            width: 20%;
+            text-align: center;
+            background-color: #DEDEDE;
+            margin: 0 .5rem;
+        }
+    }
+    &__wrap {
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -39,6 +39,3 @@
         @content;
     }
 }
-@mixin transition($sec:0.5s, $easing: ease-in-out) {
-    transition: $sec $easing;
-}

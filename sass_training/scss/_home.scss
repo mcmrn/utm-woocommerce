@@ -13,12 +13,18 @@
         > * {
             margin-bottom:2rem ;
         }
+       
         @include maxMQ768 {
-            width: unset;
-            transform: translateY(-20%);
+            width: 90%;
+            transform: translateY(-250%);
         }
         @include maxMQ821 {
             padding: 3rem 1rem;
+        }
+        @include maxMQ520 {
+            width: 90%;
+            transform: translateY(-120%);
+            padding: 2rem 1rem;
         }
         width: 55%;
         padding: 5rem 2rem;
@@ -34,6 +40,9 @@
             }
             @include maxMQ821 {
                 font-size: 4rem;
+            }
+            @include maxMQ520 {
+                font-size: 3rem;
             }
         }
         p {
@@ -62,6 +71,9 @@
 .books {
     background-color: #F6FBFF;
     padding: 3rem 2rem 7rem 2rem;
+    @include maxMQ768{
+        padding-top: unset;
+    }
     &__lists {
         grid-template-columns: 1fr 1fr;
         grid-gap: 5rem;
@@ -73,10 +85,12 @@
         }
     }
     &__image {
+        display: flex;
+        justify-content: center;
         img {
             width: 80%;
             @include maxMQ520 {
-                width: 100%;
+                width: 80%;
             }
         }
     }
