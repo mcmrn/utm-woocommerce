@@ -25,29 +25,41 @@ const menu = document.querySelector('.header__menu');
 toggle.addEventListener('click', () => menu.classList.toggle('show'))
 
 //PLUS AND MINUS CART
-function increment() {
-  document.getElementById("input").stepUp();
+
+document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+
+var valueCount;
+
+var price = document.getElementById("price").innerText;
+
+function priceTotal() {
+    var total = valueCount * price + ".00";
+    document.getElementById("price").innerText = total;
 }
-function decrement() {
-  document.getElementById("input").stepDown();
-}
 
-//WISHLIST BUTTON
+document.querySelector(".plus-btn").addEventListener("click", () => {
+    valueCount = document.getElementById("quantity").value;
 
-// function wishlist(x) {
-//   x.classList.toggle("fa-heart");
-// }
+    valueCount++;
 
-// const whiteHeart = '\u2661';
-// const blackHeart = '\u2665';
-// const button = document.querySelector('button');
-// button.addEventListener('click', toggle);
+    document.getElementById("quantity").value = valueCount;
 
-// function toggleWish() {
-//   const like = button.textContent;
-//   if(like==whiteHeart) {
-//     button.textContent = blackHeart;
-//   } else {
-//     button.textContent = whiteHeart;
-//   }
-// }
+    if (valueCount > 1) {
+        document.querySelector(".minus-btn").removeAttribute("disabled");
+    }
+
+    priceTotal()
+})
+
+    document.querySelector(".minus-btn").addEventListener("click", () => {
+    valueCount = document.getElementById("quantity").value;
+
+    valueCount--;
+
+    document.getElementById("quantity").value = valueCount
+
+    if (valueCount == 1) {
+        document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+    }
+    priceTotal()
+})

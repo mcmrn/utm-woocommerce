@@ -113,7 +113,7 @@
                     </div>
                     <div class="checkout__context__price">
                         <div class="checkout__context__rate d--flex mb--2 mt--2">
-                            <span>$70.00</span>
+                            <span>$<span id="price">70.00</span></span>
                             <ul>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -124,11 +124,11 @@
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nobis optio sint sed in
                             molestias similique porro distinctio laboriosam,</p>
-                        <div class="checkout__context__add d--flex mt--1">
-                            <div>
-                                <span onclick="decrement()">-</span>
-                                <input id="input" type="number" value="1" min="0">
-                                <span onclick="increment()">+</span>
+                        <div class="checkout__context__add d--flex mt--3">
+                            <div class="checkout__context__quantity">
+                                <button type="button" class="minus-btn">-</button>
+                                <input id="quantity" type="text" value="1">
+                                <button type="button" class="plus-btn">+</button>
                             </div>
                             <div>
                                 <button class="cart--button">Add to cart</button>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="bundle__context">
                     <span>Wake up the inner you</span>
-                    <h2>Unleash Now!</h2>
+                    <h2>Unleash <br> Now!</h2>
                     <p>Books come cheaper when you buy in bundle</p>
                     <button class="cart--button">Add to cart</button>
                 </div>

@@ -13,8 +13,14 @@
         }
     }
     &__image {
+        @include maxMQ963 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         @include maxMQ768 {
             width: 100%;
+            display: unset;
         }
         img {
             width: 100%;
@@ -30,7 +36,7 @@
                 width: 10%;
                 background-color: #DEDEDE;
                 cursor: pointer;
-                @include maxMQ768 {
+                @include maxMQ963 {
                     width: 20%;
                 }
             }
@@ -59,11 +65,17 @@
         }
         &__add {
             justify-content: space-between;
-            span {
+        }
+        &__details {
+            border-bottom: 1px solid #AAA8A8;
+        }
+        &__quantity {
+            button {
                 font-size: 2rem;
+                border: none;
+                background-color: transparent;
                 color: $secondary;
-                font-weight: 700;
-                margin: 0 .5rem;
+                font-weight: 900;
                 cursor: pointer;
             }
             input {
@@ -73,10 +85,8 @@
                 width: 20%;
                 text-align: center;
                 background-color: #DEDEDE;
+                margin: 0 .5rem;
             }
-        }
-        &__details {
-            border-bottom: 1px solid #AAA8A8;
         }
     }
     &__cart {
@@ -91,7 +101,7 @@
             border-top: 2px solid $primary;
             img {
                 background-color: #DEDEDE;
-                width: 20%;
+                width: 15%;
                 @include maxMQ963 {
                     width: 10%;
                 }
@@ -106,7 +116,7 @@
             border-bottom: 1px solid #AAA8A8;
             img {
                 background-color: #DEDEDE;
-                width: 20%;
+                width: 15%;
                 @include maxMQ963 {
                     width: 10%;
                 }
@@ -135,7 +145,7 @@
     padding: 5rem 0;
     background-color: #F6FBFF;
     &__wrapper {
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 0 5rem;
         @include maxMQ768 {
@@ -153,7 +163,6 @@
         }
         h2 {
             line-height: 1;
-        width: 99%;
         font-size: 7rem;
         }
         p {

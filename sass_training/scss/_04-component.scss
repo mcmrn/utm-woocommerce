@@ -114,6 +114,11 @@
                 display: none;
             }
         }
+        a:hover {
+            background-color: $secondary;
+            padding: 3.9rem 1rem 1rem 1rem;
+            color: $light;
+        }
         
         @include minMQ768 {
             i {
