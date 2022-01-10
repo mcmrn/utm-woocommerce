@@ -75,7 +75,7 @@
         padding-top: unset;
     }
     &__lists {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5rem;
         @include maxMQ768{
             grid-template-columns: 1fr;
@@ -84,11 +84,14 @@
             grid-template-columns: 1fr;
         }
     }
+    &__heading {
+        text-align: center;
+    }
     &__image {
         display: flex;
         justify-content: center;
         img {
-            width: 80%;
+            width: 70%;
             @include maxMQ520 {
                 width: 80%;
             }
@@ -123,6 +126,41 @@
         }
         span {
             font-weight: 600;
+        }
+    }
+}
+
+.deals {
+    padding: 5rem 2rem;
+    height: 100vh;
+    &__banner {
+    height: 70vh;
+    background: url('/dist/img/utm_background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: center;
+    }
+    &__wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15rem;
+        margin: 0 15rem;
+        align-items: center;
+        color: $light;
+    }
+    &__content__left {
+        > * {
+            margin-bottom: 5rem;
+        }
+    }
+    &__content__right {
+        font-weight: 700;
+
+        span {
+            font-size: 20rem;
+        }
+        p {
+            transform: translate(5rem, -5rem);
         }
     }
 }

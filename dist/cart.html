@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/dist/css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper d--flex">
-                
+
                 <div class="header__icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -88,25 +90,101 @@
     <section class="cart">
         <div class="container">
             <div class="cart__wrapper d--flex">
-                <div class="cart__table">
-                <span>Cart</span>
+                <div class="cart__table d--flex">
+                    <div class="cart__context">
+                        <span class="cart__heading t--bold">Cart</span>
                     <table>
-                        <thead>
-                            <tr>
+                        <tr>
                             <th>Product</th>
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Total</th>
-                            </tr>
+                        </tr>
+
+                        <tr class="cart__body">
+                            <td class="cart__product d--flex">
+                                <i class="fas fa-times"></i>
+                                <img src="/dist/img/Book-1.png" alt="">
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Bob Clinkert</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>$<span>70.00</span></span>
+                            </td>
+                            <td class="cart__quantity">
+                                <button type="button" class="minus-btn">-</button>
+                                <input id="quantity" type="text" value="1">
+                                <button type="button" class="plus-btn">+</button>
+                            </td>
+                            <td>
+                                <span>$<span id="price">70.00</span></span>
+                            </td>
+                        </tr>
+
+                        <tr class="cart__body">
+                            <td class="cart__product d--flex">
+                                <i class="fas fa-times"></i>
+                                <img class="fas fa-times" src="/dist/img/Book-2.png" alt="">
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Ron Jensen</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>$<span>70.00</span></span>
+                            </td>
+                            <td class="cart__quantity">
+                                <button type="button" class="minus-btn">-</button>
+                                <input id="quantity" type="text" value="1">
+                                <button type="button" class="plus-btn">+</button>
+                            </td>
+                            <td>
+                                <span>$<span id="price">70.00</span></span>
+                            </td>
+                        </tr>
+
+                        <tr class="cart__body">
+                            <td class="cart__product d--flex">
+                                <i class="fas fa-times"></i>
+                                <img src="/dist/img/Book-3.png" alt="">
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Bob Clinkert</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span>$<span>70.00</span></span>
+                            </td>
+                            <td class="cart__quantity">
+                                <button type="button" class="minus-btn">-</button>
+                                <input id="quantity" type="text" value="1">
+                                <button type="button" class="plus-btn">+</button>
+                            </td>
+                            <td>
+                                <span>$<span id="price">70.00</span></span>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- MOBILE VIEW -->
+                    <table>
+                        <thead>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
                         </thead>
 
                         <tbody class="cart__body">
                             <td class="cart__product d--flex">
+                                <i class="fas fa-times"></i>
                                 <img src="/dist/img/Book-1.png" alt="">
-                            <div>
-                                <h4>Foundation for Life</h4>
-                                <span>by: Bob Clinkert</span>
-                            </div>
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Bob Clinkert</span>
+                                </div>
                             </td>
                             <td>
                                 <span>$<span>70.00</span></span>
@@ -121,13 +199,14 @@
                             </td>
                         </tbody>
 
-                        <tbody class="cart__body">
+                        <tr class="cart__body">
                             <td class="cart__product d--flex">
-                                <img src="/dist/img/Book-2.png" alt="">
-                            <div>
-                                <h4>Foundation for Life</h4>
-                                <span>by: Ron Jensen</span>
-                            </div>
+                                <i class="fas fa-times"></i>
+                                <img class="fas fa-times" src="/dist/img/Book-2.png" alt="">
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Ron Jensen</span>
+                                </div>
                             </td>
                             <td>
                                 <span>$<span>70.00</span></span>
@@ -140,15 +219,16 @@
                             <td>
                                 <span>$<span id="price">70.00</span></span>
                             </td>
-                        </tbody>
+                        </tr>
 
-                        <tbody class="cart__body">
+                        <tr class="cart__body">
                             <td class="cart__product d--flex">
+                                <i class="fas fa-times"></i>
                                 <img src="/dist/img/Book-3.png" alt="">
-                            <div>
-                                <h4>Foundation for Life</h4>
-                                <span>by: Bob Clinkert</span>
-                            </div>
+                                <div>
+                                    <h4>Foundation for Life</h4>
+                                    <span>by: Bob Clinkert</span>
+                                </div>
                             </td>
                             <td>
                                 <span>$<span>70.00</span></span>
@@ -161,7 +241,7 @@
                             <td>
                                 <span>$<span id="price">70.00</span></span>
                             </td>
-                        </tbody>
+                        </tr>
                     </table>
 
                     <div class="cart__wrap d--flex">
@@ -169,9 +249,10 @@
                             <input type="text" name="" id="">
                             <button class="cart--button" type="button">Apply Coupon</button>
                         </div>
-                        <div class="cart__update">
+                        <!-- <div class="cart__update">
                             <button class="cart--button" type="button">Update Cart</button>
-                        </div>
+                        </div> -->
+                    </div>
                     </div>
                 </div>
             </div>
@@ -180,12 +261,51 @@
 
     <section class="totals">
         <div class="container">
-            <div class="totals__wrapper">
-                <span>Cart Totals</span>
+            <div class="totals__wrapper d--flex">
+                <div class="totals__table d--flex">
+                    <div class="totals__context">
+                        <span class="totals__heading t--bold">Cart Totals</span>
+                        <table>
+                            <tr class="">
+                                <th class="t--light">SubTotal</th>
+                                <td>
+                                    <span>$<span id="price">210.00</span></span>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <th class="t--light">Shipping Fee</th>
+                                <td>
+                                    <span>$<span id="price">2.00</span></span>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <th>Total</th>
+                                <td class="t--bold">
+                                    <span>$<span id="price">212.00</span></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="totals__button  d--flex">
+                            <a href="#" class="cart--button">Proceed to checkout > > ></a>
+                            <!-- <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right"></i> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
     </section>
+
+    <footer class="footer">
+
+    </footer>
 
     <script src="/dist/js/index.js"></script>
 </body>
+
 </html>

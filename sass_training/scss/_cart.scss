@@ -1,13 +1,42 @@
 .cart {
-    &__wrapper {
-        justify-content: center;
-        align-items: center;
+    padding: 3rem 2rem;
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th {
+        background-color: #F6FBFF;
+        padding: 1rem;
+    }
+     th,td {
+        border-bottom: 1px solid #DEDEDE;
+    }
+    td:nth-child(1) {
+        border-left: 1px solid #DEDEDE;
+    }
+    td:nth-child(4) {
+        border-right: 1px solid #DEDEDE;
+    }
+    &__body {
+        position: relative;
+    }
+    &__table {
+        width: 100%;
+    }
+    &__context {
+        width: 100%;
     }
     &__product {
         align-items: center;
+        i {
+            position: absolute;
+            top: .5rem;
+            left: 3rem;
+            cursor: pointer;
+        }
         img {
-            width: 15%;
-            margin-right: 5rem;
+            width: 10%;
+            margin:0 5rem;
         }
     }
     &__quantity {
@@ -33,5 +62,56 @@
     &__wrap {
         justify-content: space-between;
         align-items: center;
+        background-color: #F6FBFF;
+        padding: 2rem;
+        input {
+            padding: .4rem 1.5rem;
+        }
+        button {
+            text-transform: uppercase;
+        }
+    }
+    &__heading {
+        font-size: 3rem;
+    }
+}
+
+.totals {
+    padding: 5rem 2rem;
+    &__table {
+        justify-content: right;
+        width: 100%;
+        table, th, td {
+            border-bottom: 1px solid #DEDEDE;
+            border-top: 1px solid #DEDEDE;
+            border-collapse: collapse;
+            padding: 1rem;
+          }
+          th:nth-child(1) {
+            border-left: 1px solid #DEDEDE;
+          }
+          td:nth-child(2) {
+            border-right: 1px solid #DEDEDE;
+          }
+          table {
+              width: 40rem;
+              text-align: center;
+          }
+          th {
+              background-color: #F6FBFF;
+              width: 40%;
+          }
+    }
+    &__heading {
+        font-size: 2.5rem;
+    }
+    &__button {
+        padding: 1rem 0;
+                a {
+                    width: 100%;
+                    text-transform: uppercase;
+                    transition: .5s ease;
+                    text-align: center;
+                }
     }
 }

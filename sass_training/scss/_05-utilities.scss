@@ -37,6 +37,14 @@
     color: $light;
     font-weight: 600;
 }
+.cart--button2 {
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: $light;
+    color: $secondary;
+    font-weight: 600;
+}
 .wishlist--button {
     padding-top: 2rem;
     cursor: pointer;
@@ -54,6 +62,12 @@
 }
 .primary {
     color: $primary;
+}
+.t--bold {
+    font-weight: 700;
+}
+.t--light {
+    font-weight: 400;
 }
 $sizes: 1, 2,3,4,5;
 
