@@ -28,8 +28,8 @@
   z-index: 1;
   top: 0;
   left: -100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   width: 70%;
   height: 100%;
   text-align: center;
@@ -115,7 +115,11 @@
 
 .header__nav a {
   color: #040069;
+  display: inline-block;
   text-transform: uppercase;
+  padding: 3rem 2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,7 +130,6 @@
 
 .header__nav a:hover {
   background-color: #6695BD;
-  padding: 3.9rem 1rem 1rem 1rem;
   color: white;
 }
 
@@ -137,7 +140,7 @@
 }
 
 .header__nav li {
-  margin: 0 2rem;
+  margin-left: 2rem;
 }
 
 .header__icons {
@@ -159,7 +162,7 @@
 }
 
 .branding {
-  padding: 2rem;
+  padding: 0 2rem;
   color: #040069;
 }
 
@@ -208,7 +211,7 @@
 }
 
 .footer--2__logo img {
-  width: 80%;
+  width: 35rem;
   margin-bottom: 3rem;
 }
 
@@ -501,8 +504,8 @@ ul {
   padding: 5rem 2rem;
   color: #262626;
   background-color: white;
-  -webkit-box-shadow: -.5rem .5rem 2rem -.99rem;
-          box-shadow: -.5rem .5rem 2rem -.99rem;
+  -webkit-box-shadow: -0.5rem 0.5rem 2rem -0.99rem;
+          box-shadow: -0.5rem 0.5rem 2rem -0.99rem;
   -webkit-transform: translateX(20%);
           transform: translateX(20%);
 }
@@ -565,8 +568,8 @@ ul {
 .banner__text a {
   color: #6695BD;
   font-weight: 600;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .banner__text a:hover {
@@ -583,7 +586,7 @@ ul {
 }
 
 .books {
-  background-color: #F6FBFF;
+  background-color: #f6fbff;
   padding: 3rem 2rem 7rem 2rem;
 }
 
@@ -608,8 +611,8 @@ ul {
 
 @media screen and (max-width: 1024px) {
   .books__lists {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -623,6 +626,14 @@ ul {
   display: flex;
 }
 
+@media screen and (max-width: 1024px) {
+  .books__image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .books__image img {
   width: 70%;
 }
@@ -630,6 +641,12 @@ ul {
 @media screen and (max-width: 520px) {
   .books__image img {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .books__image img {
+    width: 50%;
   }
 }
 
@@ -653,6 +670,12 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .books__context {
+    text-align: center;
+  }
+}
+
 .books__context h2 {
   font-size: 2.2rem;
   line-height: 1.2;
@@ -668,8 +691,8 @@ ul {
 .books__context a {
   color: #6695BD;
   font-weight: 600;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .books__context a:hover {
@@ -685,12 +708,12 @@ ul {
 }
 
 .books__context sup {
-  color: #DEDEDE;
+  color: #dedede;
   text-decoration: line-through;
 }
 
 .deals {
-  padding: 10rem 0;
+  padding: 10rem 2rem;
 }
 
 .deals__banner {
@@ -706,6 +729,14 @@ ul {
           align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .deals__banner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .deals__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -715,6 +746,27 @@ ul {
   color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .deals__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 5rem;
+    padding: unset;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .deals__content__left h2 {
+    margin-bottom: unset;
+  }
+  .deals__content__left p {
+    margin-bottom: 1rem;
+  }
+}
+
 .deals__content__right {
   font-weight: 700;
   line-height: 1;
@@ -722,6 +774,18 @@ ul {
 
 .deals__content__right span {
   font-size: 20rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .deals__content__right span {
+    font-size: 15rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .deals__content__right p {
+    margin: unset;
+  }
 }
 
 .checkout {
@@ -1302,7 +1366,7 @@ ul {
 
 .products__banner {
   position: relative;
-  height: 70vh;
+  height: 40rem;
   background: url("/dist/img/utm_background.png") no-repeat center center;
   background-size: cover;
 }
@@ -1310,6 +1374,9 @@ ul {
 .products__wrapper {
   position: absolute;
   top: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .products__context {

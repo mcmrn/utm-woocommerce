@@ -1,33 +1,34 @@
 .products {
-    &__banner {
-        position: relative;
-        height: 70vh;
-        background: url('/dist/img/utm_background.png') no-repeat center center;
-        background-size: cover;
-
+  &__banner {
+    position: relative;
+    height: 40rem;
+    background: url("/dist/img/utm_background.png") no-repeat center center;
+    background-size: cover;
+  }
+  &__wrapper {
+    position: absolute;
+    top: 40%;
+    align-items: center;
+  }
+  &__context {
+    padding: 0 2rem;
+    color: $light;
+    line-height: 1.2;
+    span {
+      font-size: 3rem;
     }
-    &__wrapper {
-        position: absolute;
-        top: 40%;
+    h2 {
+      font-size: 7rem;
     }
-    &__context {
-        padding: 0 2rem;
-        color: $light;
-        line-height: 1.2;
-        span {
-            font-size: 3rem;
-        }
-        h2 {
-            font-size: 7rem;
-        }
-    }
+  }
 }
+
 .books {
-    padding-bottom: 10rem;
-    &__pagination {
-        padding: 5rem 0;
-        p {
-            text-transform: uppercase;
-        }
+  padding-bottom: 10rem;
+  &__pagination {
+    padding: 5rem 0;
+    p {
+      text-transform: uppercase;
     }
+  }
 }
