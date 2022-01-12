@@ -23,6 +23,11 @@
 .active:visited {
     color: $light;
 }
+.desc--active {
+    border-bottom: 1rem solid $secondary;
+    padding-bottom: .7rem;
+    border-radius: 1rem;
+}
 .book--number {
     padding: .5rem 1.5rem;
     background-color: $primary;
@@ -32,7 +37,7 @@
 .cart--button {
     cursor: pointer;
     border: none;
-    padding: .5rem 1.5rem;
+    padding: 1rem 2rem;
     background-color: $secondary;
     color: $light;
     font-weight: 600;

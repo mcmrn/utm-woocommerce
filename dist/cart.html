@@ -25,10 +25,8 @@
 
                 <div class="header__log">
                     <div class="header__log__icons p--relative">
-                        <i class="fas fa-user"></i>
-                        <a href="#">Login / </a>
-                        <a href="#"> Register</a>
-                        <a href="/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                         <i id="toggle" class="fas fa-bars"></i>
                     </div>
                 </div>
@@ -88,158 +86,114 @@
     </header>
 
     <section class="cart">
+        <div class="cart__heading">
+            <h2 class="cart__heading t--bold mb--5">Cart</h2>
+        </div>
+
         <div class="container">
-            <div class="cart__wrapper d--flex">
-                <div class="cart__table d--flex">
-                    <div class="cart__context">
-                        <span class="cart__heading t--bold">Cart</span>
+            <div class="cart__wrapper d--grid">
+                <div class="cart__table">
                     <table>
                         <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
+                            <div class="cart__headings">
+                                <th>PRODUCT</th>
+                                <th>QUANTITY</th>
+                                <th>SUBTOTAL</th>
+                            </div>
                         </tr>
+                        <tr>
+                            <td>
+                                <div class="cart__product d--flex">
+                                    <div class="cart__product__image">
+                                        <img src="/dist/img/Book-1.png" alt="">
+                                    </div>
+                                    <div class="cart__product__details">
+                                        <h3>Foundation for Life</h3>
+                                        <p class="mb--2">by: Bob Clinkert</p>
+                                        <span>$70.00</span>
+                                    </div>
+                                </div>
+                            </td>
 
-                        <tr class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img src="/dist/img/Book-1.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Bob Clinkert</span>
+                            <td>
+                                <div class="cart__quantity">
+                                    <input type="number" value="1" min="1">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart__subtotal">
+                                    <span>$70.00</span>
                                 </div>
                             </td>
                             <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
-                            </td>
-                        </tr>
-
-                        <tr class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img class="fas fa-times" src="/dist/img/Book-2.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Ron Jensen</span>
+                                <div class="cart__remove ml--2">
+                                    <i class="fas fa-trash"></i>
                                 </div>
-                            </td>
-                            <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
                             </td>
                         </tr>
 
-                        <tr class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img src="/dist/img/Book-3.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Bob Clinkert</span>
+                        <tr>
+                            <td>
+                                <div class="cart__product d--flex">
+                                    <div class="cart__product__image">
+                                        <img src="/dist/img/Book-3.png" alt="">
+                                    </div>
+                                    <div class="cart__product__details">
+                                        <h3>Foundation for Life</h3>
+                                        <p class="mb--2">by: Bob Clinkert</p>
+                                        <span>$70.00</span>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart__quantity">
+                                    <input type="number" value="1" min="1">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart__subtotal">
+                                    <span>$70.00</span>
                                 </div>
                             </td>
                             <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <!-- MOBILE VIEW -->
-                    <table>
-                        <thead>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                        </thead>
-
-                        <tbody class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img src="/dist/img/Book-1.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Bob Clinkert</span>
+                                <div class="cart__remove ml--2">
+                                    <i class="fas fa-trash"></i>
                                 </div>
-                            </td>
-                            <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
-                            </td>
-                        </tbody>
-
-                        <tr class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img class="fas fa-times" src="/dist/img/Book-2.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Ron Jensen</span>
-                                </div>
-                            </td>
-                            <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
                             </td>
                         </tr>
 
-                        <tr class="cart__body">
-                            <td class="cart__product d--flex">
-                                <i class="fas fa-times"></i>
-                                <img src="/dist/img/Book-3.png" alt="">
-                                <div>
-                                    <h4>Foundation for Life</h4>
-                                    <span>by: Bob Clinkert</span>
+                        <tr>
+                            <td>
+                                <div class="cart__product d--flex">
+                                    <div class="cart__product__image">
+                                        <img src="/dist/img/Book-2.png" alt="">
+                                    </div>
+                                    <div class="cart__product__details">
+                                        <h3>Foundation for Life</h3>
+                                        <p class="mb--2">by: Bob Clinkert</p>
+                                        <span>$70.00</span>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart__quantity">
+                                    <input type="number" value="1" min="1">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart__subtotal">
+                                    <span>$70.00</span>
                                 </div>
                             </td>
                             <td>
-                                <span>$<span>70.00</span></span>
-                            </td>
-                            <td class="cart__quantity">
-                                <button type="button" class="minus-btn">-</button>
-                                <input id="quantity" type="text" value="1">
-                                <button type="button" class="plus-btn">+</button>
-                            </td>
-                            <td>
-                                <span>$<span id="price">70.00</span></span>
+                                <div class="cart__remove ml--2">
+                                    <i class="fas fa-trash"></i>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -249,24 +203,17 @@
                             <input type="text" name="" id="">
                             <button class="cart--button" type="button">Apply Coupon</button>
                         </div>
-                        <!-- <div class="cart__update">
+                        <div class="cart__update">
                             <button class="cart--button" type="button">Update Cart</button>
-                        </div> -->
-                    </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="totals">
-        <div class="container">
-            <div class="totals__wrapper d--flex">
-                <div class="totals__table d--flex">
-                    <div class="totals__context">
+                <div class="totals__table">
+                    <div class="totals__context mt--1">
                         <span class="totals__heading t--bold">Cart Totals</span>
                         <table>
-                            <tr class="">
+                            <tr>
                                 <th class="t--light">SubTotal</th>
                                 <td>
                                     <span>$<span id="price">210.00</span></span>
@@ -289,20 +236,64 @@
                         </table>
                         <div class="totals__button  d--flex">
                             <a href="#" class="cart--button">Proceed to checkout > > ></a>
-                            <!-- <i class="fas fa-chevron-right"></i>
-                            <i class="fas fa-chevron-right"></i>
-                            <i class="fas fa-chevron-right"></i> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </section>
 
-    <footer class="footer">
 
+    <footer class="footer--1">
+        <div class="container">
+            <div class="footer--1__wrapper d--flex">
+                <div class="footer--1__links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+                <div class="footer--1__nav">
+                    <nav>
+                        <ul class="d--flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Products</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer--2">
+        <div class="container">
+            <div class="footer--2__wrapper d--grid">
+                <div class="footer--2__logo">
+                    <img src="/dist/img/logo-open-source-footer.png" alt="">
+                    <p>Copyright &copy 2022 Unleash The Masterpiece</p>
+                    <p>Powered by Frontline Business Solutions</p>
+                </div>
+                <div class="footer--2__shippinginfo">
+                    <h3>Shipping Information</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam dignissimos perferendis ut quaerat, quas fuga numquam animi officiis rerum mollitia </p>
+                </div>
+                <div class="footer--2__address">
+                    <div class="street d--flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Street name</p>
+                    </div>
+                    <div class="phone d--flex">
+                        <i class="fas fa-phone"></i>
+                        <p>578-98745-1235</p>
+                    </div>
+                    <div class="contact d--flex">
+                        <i class="fas fa-at"></i>
+                        <p>contact@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="/dist/js/index.js"></script>

@@ -14,6 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper d--flex">
+
                 <div class="header__icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -24,9 +25,7 @@
 
                 <div class="header__log">
                     <div class="header__log__icons p--relative">
-                        <i class="fas fa-user"></i>
-                        <a class="login" href="#">Login / </a>
-                        <a class="register" href="#"> Register</a>
+                        <a href="#"><i class="fas fa-user"></i></a>
                         <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                         <i id="toggle" class="fas fa-bars"></i>
                     </div>
@@ -37,7 +36,6 @@
     <header class="branding">
         <div class="container">
             <div class="header__wrapper d--flex">
-
                 <!-- Mobile View Nav -->
 
                 <div class="header__menu">
@@ -63,8 +61,8 @@
                     </div>
                     <footer class="footer__register">
                         <i class="fas fa-user"></i>
-                        <a class="ml--2" href="#">Login</a> /
-                        <a href="#">Register</a>
+                        <a href="#">Login /</a>
+                        <a href="#"> Register</a>
                     </footer>
                 </div>
 
@@ -78,8 +76,9 @@
                     <nav>
                         <ul class="d--flex">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="shop.html" class="active">Shop</a></li>
+                            <li><a href="shop.html">Shop</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="products.html" class="active">Products</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -87,83 +86,49 @@
         </div>
     </header>
 
-    <section class="checkout">
-        <div class="container">
-            <div class="checkout__wrapper d--grid">
-                <div class="checkout__image">
-                    <img class="active--image d--block" src="/dist/img/Book-1.png" alt="">
-
+    <section class="products">
+        <div class="products__banner">
+            <div class="container">
+                <div class="products__wrapper d--flex">
+                    <div class="products__context">
+                        <span>Wake up the inner you</span>
+                        <h2>Unleash Now!</h2>
+                    </div>
                 </div>
-                <div class="checkout__context">
-                    <div class="checkout__context__details">
-                        <p class="p--top">Unleash your Masterpiece</p>
-                        <h2>Foundation for Life</h2>
-                        <p class="mb--2">by: Bob Clinkert</p>
-                        <div class="checkout__context__rating mb--2">
+            </div>
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="container">
+            <div class="books__wrapper">
+
+                <div class="books__pagination pb--5">
+                    <p>Showing 1-6 of 6 results</p>
+                </div>
+
+                <div class="books__lists d--grid">
+                    <div class="books__item">
+
+                        <div class="books__image">
+                            <img src="/dist/img/Book-1.png" alt="">
+                        </div>
+
+                        <div class="books__context">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
+                            <p class="p--top">Unleash your Masterpiece</p>
+                            <h2>Foundation for Life</h2>
+                            <p>by: Bob Clinkert</p>
+                            <p>$70.00</p>
+                            <button class="cart--button">Add to cart</button>
                         </div>
-                        <div class="checkout__context__price mb--2">
-                            <span class="t--bold">$70.00</span>
-                        </div>
-                        <div class="checkout__context__description mb--2">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora obcaecati voluptatem alias
-                            eveniet excepturi aliquid minus corporis! Consequatur error natus in consequuntur iste
-                            repellendus, eius totam ab dignissimos modi vero!
-                        </div>
-                    </div>
-                    <div class="checkout__context__price">
-                        <div class="checkout__context__add d--flex mt--2">
-                            <div class="checkout__context__quantity">
-                                <input id="quantity" type="number" value="1" min="1">
-                            </div>
-                            <div class="checkout__context__button">
-                                <button class="cart--button">Add to cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <section class="description">
-        <div class="container">
-            <div class="description__wrapper">
-                <div class="description__button d--flex">
-                    <div class="description__desc pb--1">
-                        <a class="desc--active" href="shop.html" target="_parent">Description</a>
                     </div>
-                    <div class="description__reviews pb--1">
-                        <a href="reviews.html" target="_parent">Reviews</a>
-                    </div>
-                </div>
-                <div class="description__context mt--5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at error eveniet laboriosam saepe
-                        quo exercitationem blanditiis in corrupti porro? Exercitationem vel ducimus labore repellendus
-                        fuga est, molestiae eaque ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Voluptatum, esse consequatur et quam tenetur quas autem. Cupiditate dolorem eum soluta adipisci
-                        ratione voluptates reprehenderit possimus aliquam. Praesentium consectetur provident
-                        reprehenderit!</p> <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non at error eveniet laboriosam saepe
-                        quo exercitationem blanditiis in corrupti porro? Exercitationem vel ducimus labore repellendus
-                        fuga est, molestiae eaque ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                        culpa necessitatibus temporibus esse magni dolorum fugiat vel. Delectus a praesentium magnam
-                        veniam nisi cupiditate, ex suscipit doloribus excepturi et dolorum.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="related">
-        <div class="container">
-            <div class="related__wrapper">
-                <span class="t--bold">Related Products</span>
-                <div class="related__list d--grid pt--2">
                     <div class="books__item">
 
                         <div class="books__image">
@@ -247,6 +212,28 @@
                         </div>
 
                     </div>
+
+                    <div class="books__item">
+
+                        <div class="books__image">
+                            <img src="/dist/img/Group 5.png" alt="">
+                        </div>
+
+                        <div class="books__context">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="p--top">Unleash your Masterpiece</p>
+                            <h2>All Collections</h2>
+                            <p>Discounted Price</p>
+                            
+                            <p>$300.00 <sup>$350.00</sup></p>
+                            <button class="cart--button">Add to cart</button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,7 +291,8 @@
         </div>
     </footer>
 
-    <script src="/dist/js/index.js"></script>
+</main>
+<script src="/dist/js/index.js"></script>
 </body>
 
 </html>

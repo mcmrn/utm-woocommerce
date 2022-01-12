@@ -1,86 +1,81 @@
 .cart {
-    padding: 3rem 2rem;
-    table {
-        border-collapse: collapse;
-        width: 100%;
+    padding-bottom: 10rem;
+    &__wrapper {
+        grid-template-columns: 4fr 2fr;
+        grid-gap: 5rem;
     }
-    th {
-        background-color: #F6FBFF;
-        padding: 1rem;
-    }
-     th,td {
-        border-bottom: 1px solid #DEDEDE;
-    }
-    td:nth-child(1) {
-        border-left: 1px solid #DEDEDE;
-    }
-    td:nth-child(4) {
-        border-right: 1px solid #DEDEDE;
-    }
-    &__body {
-        position: relative;
+    &__heading {
+        h2 {
+            text-align: center;
+            padding: 5rem;
+            background-color: #F6FBFF;
+        }
     }
     &__table {
-        width: 100%;
-    }
-    &__context {
-        width: 100%;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td {
+            padding: 2rem 0;
+        }
+        tr {
+            border-bottom: 2px solid #DEDEDE;
+        }
     }
     &__product {
         align-items: center;
-        i {
-            position: absolute;
-            top: .5rem;
-            left: 3rem;
-            cursor: pointer;
+        &__image {
+            width: 20%;
+            margin-right: 3rem;
+            img {
+                width: 80%;
+            }
         }
-        img {
-            width: 10%;
-            margin:0 5rem;
+        &__details {
+            line-height: 1.1;
         }
     }
     &__quantity {
         text-align: center;
-        button {
-            font-size: 2rem;
-            border: none;
-            background-color: transparent;
-            color: $secondary;
-            font-weight: 900;
-            cursor: pointer;
-        }
         input {
-            padding: 1rem;
-            border: none;
-            outline: 0;
-            width: 20%;
+            width: 40%;
             text-align: center;
-            background-color: #DEDEDE;
-            margin: 0 .5rem;
+            font-weight: 700;
+            font-size: 2.5rem;
+            outline: none;
+        }
+        input[type=number]::-webkit-inner-spin-button {
+            opacity: 1;
+        }
+    }
+    &__subtotal {
+        text-align: center;
+    }
+    &__remove {
+        text-align: center;
+        i {
+            cursor: pointer;
+            color: #AAA8A8;
         }
     }
     &__wrap {
-        justify-content: space-between;
         align-items: center;
-        background-color: #F6FBFF;
-        padding: 2rem;
-        input {
-            padding: .4rem 1.5rem;
-        }
-        button {
-            text-transform: uppercase;
-        }
+        justify-content: space-between;
+        margin-top: 3rem;
     }
-    &__heading {
-        font-size: 3rem;
+    &__coupon {
+        input {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 1rem;
+            outline: none;
+        }
     }
 }
 
 .totals {
-    padding: 5rem 2rem;
     &__table {
-        justify-content: right;
-        width: 100%;
         table, th, td {
             border-bottom: 1px solid #DEDEDE;
             border-top: 1px solid #DEDEDE;
@@ -94,8 +89,9 @@
             border-right: 1px solid #DEDEDE;
           }
           table {
-              width: 40rem;
               text-align: center;
+              width: 100%;
+              margin-top: 1.5rem;
           }
           th {
               background-color: #F6FBFF;

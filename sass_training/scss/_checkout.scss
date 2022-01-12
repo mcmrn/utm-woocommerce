@@ -1,112 +1,125 @@
 .checking {
-    padding: 3rem 0;
-    &__wrapper {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10rem;
-        padding: 3rem 10rem;
+  padding-bottom: 10rem;
+  &__heading {
+    background-color: #f6fbff;
+    text-align: center;
+    padding: 5rem;
+  }
+  &__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    padding: 3rem 10rem;
+    @include maxMQ768 {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    @include maxMQ963 {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  }
+  &__details {
+    form {
+      justify-content: center;
+      flex-direction: column;
+
+      input {
+        padding: 1rem;
         @include maxMQ768 {
-            grid-template-columns: 1fr;
-            padding: 0 1rem;
+          width: 100%;
         }
         @include maxMQ963 {
-            grid-template-columns: 1fr;
-            padding: 0 1rem;
+          width: 100%;
         }
+      }
+    }
+    &__textarea {
+      textarea {
+        width: 100%;
+        height: 10rem;
+        padding: 1rem;
+      }
+    }
+    &__between {
+      justify-content: space-between;
+      @include maxMQ768 {
+        display: block;
+      }
+      @include maxMQ963 {
+        display: block;
+      }
+      .pr--1 {
+        @include maxMQ768 {
+          padding: unset;
+          margin-bottom: 2rem;
+        }
+        @include maxMQ963 {
+          padding: unset;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  &__order {
+    h3 {
+      font-weight: 500;
     }
     &__details {
-        form {
-            justify-content:center;
-            flex-direction: column;
-            
-            input {
-                padding: 1rem;
-                @include maxMQ768 {
-                    width: 100%;
-                }
-                @include maxMQ963 {
-                    width: 100%;
-                }
-            }
-        }
-        &__between {
-            justify-content: space-between;
-            @include maxMQ768 {
-                display: block;
-            }
-            @include maxMQ963 {
-                display: block;
-            }
-            .pr--1 {
-                @include maxMQ768 {
-                    padding: unset;
-                    margin-bottom: 2rem;
-                }
-                @include maxMQ963 {
-                    padding: unset;
-                    margin-bottom: 2rem;
-                }
-            }
-        }
+      padding: 0 2rem;
+      justify-content: space-between;
     }
-    &__order {
-        h3 {
-            font-weight: 500;
-        }
-        &__details {
-            padding: 0 2rem;
-            justify-content: space-between;
-        }
-        &__item {
-            > * {
-            border-bottom: 1px solid #AAA8A8;
-            padding: 1rem;
-            }
-            p {
-                color: #AAA8A8;
-            }
-        }
-        &__shipping {
-            background-color: #F6FBFF;
-            padding: 2rem 0;
-            p {
-                font-weight: 600;
-            }
-        }
-        &__payment {
-            background-color: #F6FBFF;
-            padding: 2rem 0;
-            p {
-                padding: 2rem;
-            }
-            label {
-                margin-left: 1rem;
-                color: $light;
-            }
-        }
-        &__check {
-            padding: .5rem 2rem;
-            > * {
-            background-color: #555C63;
-            padding: .5rem .5rem;
-            }
-        }
-        &__choose {
-            > * {
-            background-color: #A9B5C1;
-            padding: .5rem .5rem;
-            }
-            padding: .5rem 2rem;
-            label, input {
-                cursor: pointer;
-            }
-        }
-        &__button {
-            padding: 1rem 2rem;
-                a {
-                    width: 100%;
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-        }
+    &__item {
+      > * {
+        border-bottom: 1px solid #aaa8a8;
+        padding: 1rem;
+      }
+      p {
+        color: #aaa8a8;
+      }
     }
+    &__shipping {
+      background-color: #f6fbff;
+      padding: 2rem 0;
+      p {
+        font-weight: 600;
+      }
+    }
+    &__payment {
+      background-color: #f6fbff;
+      padding: 2rem 0;
+      p {
+        padding: 2rem;
+      }
+      label {
+        margin-left: 1rem;
+        color: $light;
+      }
+    }
+    &__check {
+      padding: 0.5rem 2rem;
+      > * {
+        background-color: #555c63;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+    &__choose {
+      > * {
+        background-color: #a9b5c1;
+        padding: 0.5rem 0.5rem;
+      }
+      padding: 0.5rem 2rem;
+      label,
+      input {
+        cursor: pointer;
+      }
+    }
+    &__button {
+      padding: 1rem 2rem;
+      a {
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
 }
