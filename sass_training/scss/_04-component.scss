@@ -70,7 +70,6 @@
           display: block;
         }
       }
-
       .fa-bars {
         @include maxMQ768 {
           font-size: 2.5rem;
@@ -84,16 +83,16 @@
   &__nav {
     a {
       color: $primary;
-      text-transform: uppercase;
       display: inline-block;
-      padding: 4rem 1rem 1rem 1rem;
+      text-transform: uppercase;
+      padding: 3rem 2rem;
+      transition: 0.5s ease;
       @include maxMQ768 {
         display: none;
       }
     }
     a:hover {
       background-color: $secondary;
-      //   padding: 3.9rem 1rem 1rem 1rem;
       color: $light;
     }
 
@@ -103,7 +102,7 @@
       }
     }
     li {
-      margin: 0 2rem;
+      margin-left: 2rem;
     }
   }
   &__icons {
@@ -120,7 +119,7 @@
   }
 }
 .branding {
-  //   padding: 2rem;
+  padding: 0 2rem;
   color: $primary;
   @include maxMQ768 {
     padding: unset;
@@ -154,7 +153,7 @@
   }
   &__logo {
     img {
-      width: 80%;
+      width: 35rem;
       margin-bottom: 3rem;
     }
   }
