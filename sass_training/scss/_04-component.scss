@@ -164,6 +164,14 @@
       flex-direction: column;
     }
   }
+  &__links {
+    i {
+      margin-right: 2rem;
+      @include maxMQ520 {
+        margin: 1.5rem;
+      }
+    }
+  }
   li {
     margin-left: 5rem;
     @include maxMQ520 {
@@ -172,12 +180,6 @@
   }
   a {
     color: $light;
-  }
-  i {
-    margin-right: 2rem;
-    @include maxMQ520 {
-      margin: 2rem;
-    }
   }
 }
 .footer--2 {

@@ -247,6 +247,16 @@
   }
 }
 
+.footer--1__links i {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .footer--1__links i {
+    margin: 1.5rem;
+  }
+}
+
 .footer--1 li {
   margin-left: 5rem;
 }
@@ -259,16 +269,6 @@
 
 .footer--1 a {
   color: white;
-}
-
-.footer--1 i {
-  margin-right: 2rem;
-}
-
-@media screen and (max-width: 520px) {
-  .footer--1 i {
-    margin: 2rem;
-  }
 }
 
 .footer--2 {
