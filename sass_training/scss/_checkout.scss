@@ -11,11 +11,11 @@
     padding: 3rem 10rem;
     @include maxMQ768 {
       grid-template-columns: 1fr;
-      padding: 0 1rem;
+      padding: 1rem;
     }
     @include maxMQ963 {
       grid-template-columns: 1fr;
-      padding: 0 1rem;
+      padding: 4rem 1rem;
     }
   }
   &__details {
@@ -46,7 +46,6 @@
         display: block;
       }
       @include maxMQ963 {
-        display: block;
       }
       .pr--1 {
         @include maxMQ768 {

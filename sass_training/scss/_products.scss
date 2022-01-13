@@ -16,9 +16,15 @@
     line-height: 1.2;
     span {
       font-size: 3rem;
+      @include maxMQ520 {
+        font-size: 2rem;
+      }
     }
     h2 {
       font-size: 7rem;
+      @include maxMQ520 {
+        font-size: 5rem;
+      }
     }
   }
 }

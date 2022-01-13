@@ -5,22 +5,17 @@
     grid-gap: 5rem;
     @include maxMQ768 {
       display: flex;
+      justify-content: center;
       flex-direction: column;
       padding: 0 1rem;
     }
-    @include maxMQ963 {
-      grid-template-columns: 1fr;
-    }
   }
   &__image {
-    @include maxMQ963 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     @include maxMQ768 {
+      width: 50%;
+    }
+    @include maxMQ520 {
       width: 100%;
-      display: unset;
     }
     img {
       width: 100%;
@@ -128,15 +123,24 @@
   padding-bottom: 10rem;
   h2 {
     font-size: 2rem;
+    @include maxMQ520 {
+      font-size: 1.5rem;
+    }
   }
   &__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include maxMQ768 {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 .reviews {
   &__wrapper {
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
+    @include maxMQ963 {
+      grid-template-columns: 1fr;
+    }
   }
   &__profile {
     align-items: center;
@@ -151,6 +155,10 @@
   }
   &__paragraph {
     margin-left: 10rem;
+    text-align: justify;
+    @include maxMQ520 {
+      margin-left: 5rem;
+    }
   }
   &__rating {
     align-items: center;
@@ -163,9 +171,16 @@
   }
   &__info {
     position: relative;
+    @include maxMQ520 {
+      display: unset;
+    }
     input {
       padding: 1rem;
       width: 100%;
+      @include maxMQ520 {
+        margin-left: unset;
+        margin-bottom: 1rem;
+      }
     }
   }
   &__forms {
@@ -173,6 +188,10 @@
       width: 100%;
       height: 15rem;
       padding: 1rem;
+      outline: none;
+    }
+    input {
+      outline: none;
     }
   }
   &__checkbox {

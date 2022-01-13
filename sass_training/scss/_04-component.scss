@@ -141,6 +141,9 @@
   }
   i {
     margin-right: 2rem;
+    @include maxMQ520 {
+      margin: unset;
+    }
   }
 }
 .footer--2 {
@@ -148,13 +151,29 @@
   padding: 5rem;
   color: $light;
   &__wrapper {
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-gap: 10rem;
+    justify-content: space-between;
+    gap: 10rem;
+    @include maxMQ1024 {
+      gap: 5rem;
+    }
+    @include maxMQ768 {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+    @include maxMQ520 {
+      flex-direction: column-reverse;
+    }
   }
   &__logo {
     img {
       width: 35rem;
       margin-bottom: 3rem;
+      @include maxMQ768 {
+        margin-bottom: 2rem;
+      }
+      @include maxMQ821 {
+        width: 25rem;
+      }
     }
   }
   &__shippinginfo {

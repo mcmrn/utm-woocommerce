@@ -198,6 +198,12 @@
   margin-right: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .footer--1 i {
+    margin: unset;
+  }
+}
+
 .footer--2 {
   background-color: #040069;
   padding: 5rem;
@@ -205,14 +211,52 @@
 }
 
 .footer--2__wrapper {
-  -ms-grid-columns: 2fr 2fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr;
-  grid-gap: 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer--2__wrapper {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer--2__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer--2__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .footer--2__logo img {
   width: 35rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer--2__logo img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .footer--2__logo img {
+    width: 25rem;
+  }
 }
 
 .footer--2__shippinginfo h3 {
@@ -475,6 +519,7 @@ ul {
 }
 
 .banner {
+  position: relative;
   padding: 3rem 2rem;
 }
 
@@ -517,8 +562,9 @@ ul {
 @media screen and (max-width: 768px) {
   .banner__text {
     width: 90%;
-    -webkit-transform: translateY(-250%);
-            transform: translateY(-250%);
+    position: absolute;
+    top: 10%;
+    left: -13%;
   }
 }
 
@@ -531,8 +577,6 @@ ul {
 @media screen and (max-width: 520px) {
   .banner__text {
     width: 90%;
-    -webkit-transform: translateY(-120%);
-            transform: translateY(-120%);
     padding: 2rem 1rem;
   }
 }
@@ -590,12 +634,6 @@ ul {
   padding: 3rem 2rem 7rem 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .books {
-    padding-top: unset;
-  }
-}
-
 .books__lists {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
@@ -613,6 +651,13 @@ ul {
   .books__lists {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .books__lists {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -685,6 +730,12 @@ ul {
 @media screen and (max-width: 1024px) {
   .books__context h2 {
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .books__context h2 {
+    font-size: 2rem;
   }
 }
 
@@ -782,6 +833,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .deals__content__right span {
+    font-size: 10rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .deals__content__right p {
     margin: unset;
@@ -803,6 +860,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -811,31 +871,15 @@ ul {
   }
 }
 
-@media screen and (max-width: 963px) {
-  .checkout__wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 963px) {
-  .checkout__image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .checkout__image {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .checkout__image {
     width: 100%;
-    display: unset;
   }
 }
 
@@ -989,15 +1033,35 @@ ul {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 520px) {
+  .related h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .related__list {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .related__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .reviews__wrapper {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 10rem;
+}
+
+@media screen and (max-width: 963px) {
+  .reviews__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .reviews__profile {
@@ -1018,6 +1082,13 @@ ul {
 
 .reviews__paragraph {
   margin-left: 10rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 520px) {
+  .reviews__paragraph {
+    margin-left: 5rem;
+  }
 }
 
 .reviews__rating {
@@ -1038,15 +1109,33 @@ ul {
   position: relative;
 }
 
+@media screen and (max-width: 520px) {
+  .reviews__info {
+    display: unset;
+  }
+}
+
 .reviews__info input {
   padding: 1rem;
   width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+  .reviews__info input {
+    margin-left: unset;
+    margin-bottom: 1rem;
+  }
 }
 
 .reviews__forms textarea {
   width: 100%;
   height: 15rem;
   padding: 1rem;
+  outline: none;
+}
+
+.reviews__forms input {
+  outline: none;
 }
 
 .reviews__checkbox {
@@ -1076,7 +1165,7 @@ ul {
   .checking__wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 }
 
@@ -1084,7 +1173,7 @@ ul {
   .checking__wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 0 1rem;
+    padding: 4rem 1rem;
   }
 }
 
@@ -1127,12 +1216,6 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
-  .checking__details__between {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 963px) {
   .checking__details__between {
     display: block;
   }
@@ -1389,8 +1472,20 @@ ul {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 520px) {
+  .products__context span {
+    font-size: 2rem;
+  }
+}
+
 .products__context h2 {
   font-size: 7rem;
+}
+
+@media screen and (max-width: 520px) {
+  .products__context h2 {
+    font-size: 5rem;
+  }
 }
 
 .books {

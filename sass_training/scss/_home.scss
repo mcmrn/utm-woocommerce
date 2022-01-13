@@ -1,4 +1,5 @@
 .banner {
+  position: relative;
   padding: 3rem 2rem;
   @include maxMQ768 {
     padding: unset;
@@ -16,14 +17,15 @@
 
     @include maxMQ768 {
       width: 90%;
-      transform: translateY(-250%);
+      position: absolute;
+      top: 10%;
+      left: -13%;
     }
     @include maxMQ821 {
       padding: 3rem 1rem;
     }
     @include maxMQ520 {
       width: 90%;
-      transform: translateY(-120%);
       padding: 2rem 1rem;
     }
     width: 55%;
@@ -72,7 +74,7 @@
   background-color: #f6fbff;
   padding: 3rem 2rem 7rem 2rem;
   @include maxMQ768 {
-    padding-top: unset;
+    // padding-top: unset;
   }
   &__lists {
     grid-template-columns: 1fr 1fr 1fr;
@@ -82,6 +84,9 @@
     }
     @include maxMQ1024 {
       grid-template-columns: 1fr 1fr;
+    }
+    @include maxMQ520 {
+      grid-template-columns: 1fr;
     }
   }
   &__heading {
@@ -123,6 +128,9 @@
       margin-bottom: unset;
       @include maxMQ1024 {
         font-size: 3rem;
+      }
+      @include maxMQ768 {
+        font-size: 2rem;
       }
     }
     a {
@@ -188,6 +196,9 @@
       font-size: 20rem;
       @include maxMQ1024 {
         font-size: 15rem;
+      }
+      @include maxMQ520 {
+        font-size: 10rem;
       }
     }
     p {
