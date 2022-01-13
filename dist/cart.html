@@ -47,23 +47,34 @@
             <div class="header__menu__nav">
               <nav>
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="shop.html">Shop</a></li>
-                  <li><a href="checkout.html">Checkout</a></li>
+                  <li>
+                    <div class="header__home d--flex">
+                      <i class="fas fa-home"></i>
+                      <a class="ml--2" href="index.html">Home</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="header__shop d--flex">
+                      <i class="fas fa-shop"></i>
+                      <a class="ml--2" href="shop.html">Shop</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="header__product d--flex">
+                      <i class="fas fa-box-open"></i>
+                      <a class="ml--2" href="products.html">Products</a>
+                    </div>
+                  </li>
                 </ul>
               </nav>
             </div>
-            <div class="header__menu__icons d--flex">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fas fa-globe"></i></a>
-            </div>
-            <footer class="footer__register">
-              <i class="fas fa-user"></i>
-              <a href="#">Login /</a>
-              <a href="#"> Register</a>
+
+            <footer class="footer">
+              <div class="footer__register">
+                <i class="fas fa-user"></i>
+                <a href="#">Login /</a>
+                <a href="#"> Register</a>
+              </div>
             </footer>
           </div>
 
@@ -94,108 +105,113 @@
         <div class="cart__wrapper d--grid">
           <div class="cart__table">
             <table>
-              <tr>
-                <div class="cart__headings">
-                  <th>PRODUCT</th>
-                  <th>QUANTITY</th>
-                  <th>SUBTOTAL</th>
-                </div>
-              </tr>
-              <tr>
-                <td>
-                  <div class="cart__product d--flex">
-                    <div class="cart__product__image">
-                      <img src="/dist/img/Book-1.png" alt="" />
+              <thead>
+                <tr>
+                  <div class="cart__headings">
+                    <th>PRODUCT</th>
+                    <th>QUANTITY</th>
+                    <th>SUBTOTAL</th>
+                  </div>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td data-label="Product">
+                    <div class="cart__product d--flex">
+                      <div class="cart__product__image">
+                        <img src="/dist/img/Book-1.png" alt="" />
+                      </div>
+                      <div class="cart__product__details">
+                        <h3>Foundation for Life</h3>
+                        <p class="mb--2">by: Bob Clinkert</p>
+                        <span>$70.00</span>
+                      </div>
                     </div>
-                    <div class="cart__product__details">
-                      <h3>Foundation for Life</h3>
-                      <p class="mb--2">by: Bob Clinkert</p>
+                  </td>
+
+                  <td data-label="Quantity">
+                    <div class="cart__quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                  </td>
+
+                  <td data-label="Subtotal">
+                    <div class="cart__subtotal">
                       <span>$70.00</span>
                     </div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__quantity">
-                    <input type="number" value="1" min="1" />
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__subtotal">
-                    <span>$70.00</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="cart__remove ml--2">
-                    <i class="fas fa-trash"></i>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div class="cart__product d--flex">
-                    <div class="cart__product__image">
-                      <img src="/dist/img/Book-3.png" alt="" />
+                  </td>
+                  <td>
+                    <div class="cart__remove ml--2">
+                      <i class="fas fa-trash"></i>
                     </div>
-                    <div class="cart__product__details">
-                      <h3>Foundation for Life</h3>
-                      <p class="mb--2">by: Bob Clinkert</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Product">
+                    <div class="cart__product d--flex">
+                      <div class="cart__product__image">
+                        <img src="/dist/img/Book-2.png" alt="" />
+                      </div>
+                      <div class="cart__product__details">
+                        <h3>Foundation for Life</h3>
+                        <p class="mb--2">by: Bob Clinkert</p>
+                        <span>$70.00</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td data-label="Quantity">
+                    <div class="cart__quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                  </td>
+
+                  <td data-label="Subtotal">
+                    <div class="cart__subtotal">
                       <span>$70.00</span>
                     </div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__quantity">
-                    <input type="number" value="1" min="1" />
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__subtotal">
-                    <span>$70.00</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="cart__remove ml--2">
-                    <i class="fas fa-trash"></i>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div class="cart__product d--flex">
-                    <div class="cart__product__image">
-                      <img src="/dist/img/Book-2.png" alt="" />
+                  </td>
+                  <td>
+                    <div class="cart__remove ml--2">
+                      <i class="fas fa-trash"></i>
                     </div>
-                    <div class="cart__product__details">
-                      <h3>Foundation for Life</h3>
-                      <p class="mb--2">by: Bob Clinkert</p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Product">
+                    <div class="cart__product d--flex">
+                      <div class="cart__product__image">
+                        <img src="/dist/img/Book-3.png" alt="" />
+                      </div>
+                      <div class="cart__product__details">
+                        <h3>Foundation for Life</h3>
+                        <p class="mb--2">by: Bob Clinkert</p>
+                        <span>$70.00</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td data-label="Quantity">
+                    <div class="cart__quantity">
+                      <input type="number" value="1" min="1" />
+                    </div>
+                  </td>
+
+                  <td data-label="Subtotal">
+                    <div class="cart__subtotal">
                       <span>$70.00</span>
                     </div>
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__quantity">
-                    <input type="number" value="1" min="1" />
-                  </div>
-                </td>
-
-                <td>
-                  <div class="cart__subtotal">
-                    <span>$70.00</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="cart__remove ml--2">
-                    <i class="fas fa-trash"></i>
-                  </div>
-                </td>
-              </tr>
+                  </td>
+                  <td>
+                    <div class="cart__remove ml--2">
+                      <i class="fas fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
             </table>
 
             <div class="cart__wrap d--flex">
@@ -204,7 +220,9 @@
                 <button class="cart--button" type="button">Apply Coupon</button>
               </div>
               <div class="cart__update">
-                <button class="cart--button" type="button">Update Cart</button>
+                <button class="cart--button d--flex" type="button">
+                  Update Cart
+                </button>
               </div>
             </div>
           </div>

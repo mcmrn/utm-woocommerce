@@ -1,108 +1,113 @@
 .d--flex {
-    display: flex;
+  display: flex;
 }
 .d--grid {
-    display: grid;
+  display: grid;
 }
 .d--none {
-    display: none;
+  display: none;
 }
 .d--block {
-    display: block;
+  display: block;
 }
 .p--relative {
-    position: relative;
+  position: relative;
 }
 .p--absolute {
-    position: absolute;
+  position: absolute;
 }
 .active {
-    background-color: $secondary;
-    padding: 3.9rem 1rem 1rem 1rem;
+  background-color: $secondary;
+  padding: 3.9rem 1rem 1rem 1rem;
 }
 .active:visited {
-    color: $light;
+  color: $light;
 }
 .desc--active {
-    border-bottom: 1rem solid $secondary;
-    padding-bottom: .7rem;
-    border-radius: 1rem;
+  border-bottom: 1rem solid $secondary;
+  padding-bottom: 0.7rem;
+  border-radius: 1rem;
 }
 .book--number {
-    padding: .5rem 1.5rem;
-    background-color: $primary;
-    color: $light;
-    font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  background-color: $primary;
+  color: $light;
+  font-weight: 600;
 }
 .cart--button {
-    cursor: pointer;
-    border: none;
-    padding: 1rem 2rem;
-    background-color: $secondary;
-    color: $light;
-    font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: $secondary;
+  color: $light;
+  font-weight: 600;
 }
 .cart--button2 {
-    cursor: pointer;
-    border: none;
-    padding: 1rem 2rem;
-    background-color: $light;
-    color: $secondary;
-    font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: $light;
+  color: $secondary;
+  font-weight: 600;
 }
 .wishlist--button {
-    padding-top: 2rem;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    color: $secondary;
-    font-weight: 600;
-    margin-left: .5rem;
+  padding-top: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: $secondary;
+  font-weight: 600;
+  margin-left: 0.5rem;
 }
 .p--top {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .secondary {
-    color: $secondary;
+  color: $secondary;
 }
 .primary {
-    color: $primary;
+  color: $primary;
 }
 .t--bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 .t--light {
-    font-weight: 400;
+  font-weight: 400;
 }
-$sizes: 1, 2,3,4,5;
+$sizes: 1, 2, 3, 4, 5;
 
 @each $size in $sizes {
-    .mb--#{$size} {
-        margin-bottom: #{$size}rem;
-    }
+  .mb--#{$size} {
+    margin-bottom: #{$size}rem;
+  }
 }
 @each $size in $sizes {
-    .mt--#{$size} {
-        margin-top: #{$size}rem;
-    }
+  .mt--#{$size} {
+    margin-top: #{$size}rem;
+  }
 }
 @each $size in $sizes {
-    .ml--#{$size} {
-        margin-left: #{$size}rem;
-    }
+  .ml--#{$size} {
+    margin-left: #{$size}rem;
+  }
 }
 @each $size in $sizes {
-    .pt--#{$size} {
-        padding-top: #{$size}rem;
-    }
+  .mr--#{$size} {
+    margin-left: #{$size}rem;
+  }
 }
 @each $size in $sizes {
-    .pb--#{$size} {
-        padding-bottom: #{$size}rem;
-    }
+  .pt--#{$size} {
+    padding-top: #{$size}rem;
+  }
 }
 @each $size in $sizes {
-    .pr--#{$size} {
-        padding-right: #{$size}rem;
-    }
+  .pb--#{$size} {
+    padding-bottom: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pr--#{$size} {
+    padding-right: #{$size}rem;
+  }
 }

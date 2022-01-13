@@ -42,10 +42,14 @@
     }
     &__between {
       justify-content: space-between;
-      @include maxMQ768 {
-        display: block;
-      }
+
       @include maxMQ963 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+      }
+      @include maxMQ520 {
+        display: block;
       }
       .pr--1 {
         @include maxMQ768 {

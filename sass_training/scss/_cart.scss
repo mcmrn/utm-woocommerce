@@ -1,113 +1,192 @@
 .cart {
-    padding-bottom: 10rem;
-    &__wrapper {
-        grid-template-columns: 4fr 2fr;
-        grid-gap: 5rem;
+  padding-bottom: 10rem;
+  &__wrapper {
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 5rem;
+    @include maxMQ975 {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
     }
-    &__heading {
-        h2 {
-            text-align: center;
-            padding: 5rem;
-            background-color: #F6FBFF;
-        }
+  }
+  &__heading {
+    h2 {
+      text-align: center;
+      padding: 5rem;
+      background-color: #f6fbff;
     }
-    &__table {
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th,td {
-            padding: 2rem 0;
-        }
-        tr {
-            border-bottom: 2px solid #DEDEDE;
-        }
+  }
+  &__table {
+    padding: 0 2rem;
+    table {
+      border-collapse: collapse;
+      width: 100%;
     }
-    &__product {
-        align-items: center;
-        &__image {
-            width: 20%;
-            margin-right: 3rem;
-            img {
-                width: 80%;
-            }
-        }
-        &__details {
-            line-height: 1.1;
-        }
+    thead {
+      @include maxMQ520 {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
     }
-    &__quantity {
-        text-align: center;
-        input {
-            width: 40%;
-            text-align: center;
-            font-weight: 700;
-            font-size: 2.5rem;
-            outline: none;
-        }
-        input[type=number]::-webkit-inner-spin-button {
-            opacity: 1;
-        }
+    td {
+      @include maxMQ520 {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+      }
     }
-    &__subtotal {
-        text-align: center;
+    td::before {
+      @include maxMQ520 {
+        content: attr(data-label);
+        display: flex;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
     }
-    &__remove {
-        text-align: center;
-        i {
-            cursor: pointer;
-            color: #AAA8A8;
-        }
+    td:last-child {
+      @include maxMQ520 {
+        border-bottom: none;
+      }
     }
-    &__wrap {
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 3rem;
+    th,
+    td {
+      padding: 2rem 0;
     }
-    &__coupon {
-        input {
-            text-transform: uppercase;
-            font-weight: 700;
-            padding: 1rem;
-            outline: none;
-        }
+    tr {
+      border-bottom: 2px solid #dedede;
     }
+  }
+  &__product {
+    align-items: center;
+    @include maxMQ520 {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__image {
+      width: 20%;
+      @include maxMQ520 {
+        width: 35%;
+        margin-right: unset;
+      }
+      margin-right: 3rem;
+      img {
+        width: 80%;
+      }
+    }
+    &__details {
+      line-height: 1.1;
+    }
+  }
+  &__quantity {
+    text-align: center;
+    input {
+      width: 40%;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+      outline: none;
+      @include maxMQ520 {
+        width: 20%;
+        font-size: 2rem;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid $dark;
+      }
+    }
+    input[type="number"]::-webkit-inner-spin-button {
+      opacity: 1;
+    }
+  }
+  &__subtotal {
+    text-align: center;
+  }
+  &__remove {
+    text-align: center;
+    @include maxMQ520 {
+      margin-left: unset;
+    }
+    i {
+      cursor: pointer;
+      color: #aaa8a8;
+    }
+  }
+  &__wrap {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    @include maxMQ768 {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+    }
+  }
+  &__coupon {
+    display: flex;
+    input {
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 1rem;
+      outline: none;
+      margin-right: 1rem;
+      @include maxMQ768 {
+        width: 100%;
+      }
+    }
+  }
+  &__update {
+    @include maxMQ768 {
+      margin-top: 1rem;
+      button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 .totals {
-    &__table {
-        table, th, td {
-            border-bottom: 1px solid #DEDEDE;
-            border-top: 1px solid #DEDEDE;
-            border-collapse: collapse;
-            padding: 1rem;
-          }
-          th:nth-child(1) {
-            border-left: 1px solid #DEDEDE;
-          }
-          td:nth-child(2) {
-            border-right: 1px solid #DEDEDE;
-          }
-          table {
-              text-align: center;
-              width: 100%;
-              margin-top: 1.5rem;
-          }
-          th {
-              background-color: #F6FBFF;
-              width: 40%;
-          }
+  &__table {
+    padding: 0 2rem;
+    table,
+    th,
+    td {
+      border-bottom: 1px solid #dedede;
+      border-top: 1px solid #dedede;
+      border-collapse: collapse;
+      padding: 1rem;
     }
-    &__heading {
-        font-size: 2.5rem;
+    th:nth-child(1) {
+      border-left: 1px solid #dedede;
     }
-    &__button {
-        padding: 1rem 0;
-                a {
-                    width: 100%;
-                    text-transform: uppercase;
-                    transition: .5s ease;
-                    text-align: center;
-                }
+    td:nth-child(2) {
+      border-right: 1px solid #dedede;
     }
+    table {
+      text-align: center;
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+    th {
+      background-color: #f6fbff;
+      width: 40%;
+    }
+  }
+  &__heading {
+    font-size: 2.5rem;
+  }
+  &__button {
+    padding: 1rem 0;
+    a {
+      width: 100%;
+      text-transform: uppercase;
+      transition: 0.5s ease;
+      text-align: center;
+    }
+  }
 }

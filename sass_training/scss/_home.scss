@@ -87,6 +87,7 @@
     }
     @include maxMQ520 {
       grid-template-columns: 1fr;
+      grid-gap: 5rem;
     }
   }
   &__heading {
@@ -113,6 +114,7 @@
     align-items: center;
     @include maxMQ520 {
       grid-template-columns: 1fr;
+      border-bottom: 1px solid #dedede;
     }
   }
   &__context {
@@ -181,9 +183,6 @@
   }
   &__content__left {
     @include maxMQ1024 {
-      h2 {
-        margin-bottom: unset;
-      }
       p {
         margin-bottom: 1rem;
       }
