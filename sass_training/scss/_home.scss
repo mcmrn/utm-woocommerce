@@ -1,7 +1,9 @@
 .banner {
-  position: relative;
   padding: 3rem 2rem;
   @include maxMQ768 {
+    padding: unset;
+  }
+  @include maxMQ520 {
     padding: unset;
   }
   &__wrapper {
@@ -14,12 +16,12 @@
     > * {
       margin-bottom: 2rem;
     }
-
     @include maxMQ768 {
       width: 90%;
       position: absolute;
-      top: 10%;
+      top: 11%;
       left: -13%;
+      background-color: rgba(255, 255, 255, 0.7);
     }
     @include maxMQ821 {
       padding: 3rem 1rem;
@@ -50,6 +52,9 @@
     p {
       text-transform: uppercase;
       font-weight: 700;
+      @include maxMQ520 {
+        margin-bottom: unset;
+      }
     }
     a {
       color: $secondary;

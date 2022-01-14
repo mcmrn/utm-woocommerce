@@ -5,22 +5,34 @@
   @include maxMQ768 {
     padding: 2rem;
   }
+  @include maxMQ520 {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
   &__menu.show {
-    top: 6.9rem;
+    left: 0;
+    @include minMQ768 {
+      display: none;
+    }
+  }
+  &__menu.close {
+    left: -100%;
+    @include minMQ768 {
+      display: none;
+    }
   }
   &__home {
     align-items: center;
-    justify-content: center;
     border-bottom: 1px solid #dedede;
   }
   &__shop {
     align-items: center;
-    justify-content: center;
     border-bottom: 1px solid #dedede;
   }
   &__product {
     align-items: center;
-    justify-content: center;
     border-bottom: 1px solid #dedede;
   }
   &__menu {
@@ -28,10 +40,11 @@
     background-color: #f6fbff;
     position: fixed;
     z-index: 1;
-    top: -100%;
+    top: 0;
+    left: -100%;
     transition: 0.5s ease;
-    width: 100%;
-    height: 50%;
+    width: 70%;
+    height: 100%;
     overflow-x: hidden;
     ul {
       margin: 2rem 1rem 0;
@@ -40,13 +53,16 @@
       color: $primary;
       font-size: 2rem;
       line-height: 3;
+      margin-left: 1rem;
     }
     &__logo {
-      display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       padding-top: 2rem;
       img {
         width: 80%;
+      }
+      i {
+        font-size: 3rem;
       }
     }
     .footer__register {
@@ -244,7 +260,7 @@
 }
 .mobile {
   &__wrapper {
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     bottom: 0;

@@ -19,10 +19,34 @@ function currentImg(n) {
 
 //MOBILE NAV BURGER BUTTON
 
-const toggle = document.querySelector('#toggle');
 const menu = document.querySelector('.header__menu');
+const toggle = document.querySelector('#toggle');
+const closeNav = document.querySelector('#closeNav');
 
-toggle.addEventListener('click', () => menu.classList.toggle('show'))
+
+toggle.addEventListener('click', () => menu.classList.toggle('show'));
+
+closeNav.addEventListener('click', () => menu.classList.toggle('show'));
+
+
+
+
+// const offClick = () => {
+//   menu.classList.toggle('show');
+//   document.removeEventListener('click', offClick)
+// }
+
+// const handleClick = (e) => {
+//   e.stopPropagation()
+//   menu.classList.toggle('show');
+//   if(menu.classList.contains('show')) {
+//     documnent.addEventListener('click', offClick)
+//   }
+// }
+// toggle.addEventListener('click', handleClick)
+
+
+
 
 //PLUS AND MINUS CART
 

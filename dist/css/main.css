@@ -18,17 +18,39 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+}
+
 .header__menu.show {
-  top: 6.9rem;
+  left: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header__menu.show {
+    display: none;
+  }
+}
+
+.header__menu.close {
+  left: -100%;
+}
+
+@media screen and (min-width: 769px) {
+  .header__menu.close {
+    display: none;
+  }
 }
 
 .header__home {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-bottom: 1px solid #dedede;
 }
 
@@ -36,9 +58,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-bottom: 1px solid #dedede;
 }
 
@@ -46,9 +65,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-bottom: 1px solid #dedede;
 }
 
@@ -57,11 +73,12 @@
   background-color: #f6fbff;
   position: fixed;
   z-index: 1;
-  top: -100%;
+  top: 0;
+  left: -100%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  width: 100%;
-  height: 50%;
+  width: 70%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -73,20 +90,22 @@
   color: #040069;
   font-size: 2rem;
   line-height: 3;
+  margin-left: 1rem;
 }
 
 .header__menu__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-top: 2rem;
 }
 
 .header__menu__logo img {
   width: 80%;
+}
+
+.header__menu__logo i {
+  font-size: 3rem;
 }
 
 .header__menu .footer__register {
@@ -363,9 +382,8 @@
 }
 
 .mobile__wrapper {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -650,11 +668,16 @@ ul {
 }
 
 .banner {
-  position: relative;
   padding: 3rem 2rem;
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 520px) {
   .banner {
     padding: unset;
   }
@@ -694,8 +717,9 @@ ul {
   .banner__text {
     width: 90%;
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: -13%;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -738,6 +762,12 @@ ul {
 .banner__text p {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media screen and (max-width: 520px) {
+  .banner__text p {
+    margin-bottom: unset;
+  }
 }
 
 .banner__text a {
@@ -998,6 +1028,7 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 1rem;
+    grid-gap: unset;
   }
 }
 
@@ -1020,7 +1051,7 @@ ul {
 @media screen and (max-width: 768px) {
   .checkout__image img {
     width: 100%;
-    padding: 0 1rem;
+    padding: 2rem 1rem 0;
   }
 }
 
@@ -1281,7 +1312,7 @@ ul {
 .checking__heading {
   background-color: #f6fbff;
   text-align: center;
-  padding: 5rem;
+  padding: 10rem 0 5rem;
 }
 
 .checking__wrapper {
@@ -1470,8 +1501,8 @@ ul {
 }
 
 .cart__heading h2 {
+  padding: 10rem 0 5rem;
   text-align: center;
-  padding: 5rem;
   background-color: #f6fbff;
 }
 
@@ -1623,7 +1654,7 @@ ul {
   margin-top: 3rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
   .cart__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1642,19 +1673,28 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cart__coupon input {
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1rem;
+  padding: 0.5rem;
   outline: none;
   margin-right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
   .cart__coupon input {
-    width: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .cart__coupon input {
+    width: 50%;
   }
 }
 
@@ -1664,6 +1704,11 @@ ul {
   }
   .cart__update button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .cart__update button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
