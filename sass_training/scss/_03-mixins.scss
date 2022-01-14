@@ -29,7 +29,7 @@
   }
 }
 
-@mixin minMQ480($width: 480px) {
+@mixin minMQ520($width: 520px) {
   @media screen and (min-width: $width) {
     @content;
   }

@@ -54,7 +54,7 @@
 
 .header__menu {
   position: relative;
-  background-color: white;
+  background-color: #f6fbff;
   position: fixed;
   z-index: 1;
   top: -100%;
@@ -145,12 +145,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header__log__icons .fa-shopping-cart {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .header__log__icons .fa-bars {
     font-size: 2.5rem;
   }
@@ -208,6 +202,19 @@
 
 .header__icons a {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .fa-shopping-cart {
+    display: block;
+  }
+}
+
+.fa-shopping-cart sup {
+  background-color: red;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .branding {
@@ -273,7 +280,7 @@
 
 .footer--2 {
   background-color: #040069;
-  padding: 5rem 2rem 1rem;
+  padding: 5rem 2rem;
   color: white;
 }
 
@@ -353,6 +360,30 @@
 .footer--2__address i {
   margin-right: 2rem;
   font-size: 2.5rem;
+}
+
+.mobile__wrapper {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #040069;
+}
+
+.mobile__wrapper a {
+  color: white;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 520px) {
+  .mobile {
+    display: none;
+  }
 }
 
 .d--flex {
