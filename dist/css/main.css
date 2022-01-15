@@ -87,6 +87,7 @@
 }
 
 .header__menu a {
+  width: 100%;
   color: #040069;
   font-size: 2rem;
   line-height: 3;
@@ -199,10 +200,6 @@
   .header__nav i {
     display: none;
   }
-}
-
-.header__nav li {
-  margin-left: 2rem;
 }
 
 .header__icons {

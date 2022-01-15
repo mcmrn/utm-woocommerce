@@ -50,6 +50,7 @@
       margin: 2rem 1rem 0;
     }
     a {
+      width: 100%;
       color: $primary;
       font-size: 2rem;
       line-height: 3;
@@ -139,9 +140,6 @@
       i {
         display: none;
       }
-    }
-    li {
-      margin-left: 2rem;
     }
   }
   &__icons {
