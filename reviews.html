@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTM WooCommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper d--flex">
+          <div class="header__icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+          </div>
+
+          <div class="header__log">
+            <div class="header__log__icons p--relative">
+              <a href="#"><i class="fas fa-user"></i></a>
+              <a href="cart.html"
+                ><i class="fas fa-shopping-cart"
+                  ><span><sup>5</sup></span></i
+                ></a
+              >
+              <i id="toggle" class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="branding">
+      <div class="container">
+        <div class="header__wrapper d--flex">
+          <!-- Mobile View Nav -->
+
+          <div class="header__menu">
+            <div class="header__menu__logo">
+              <img src="/dist/img/logo-open-source-white.png" alt="" />
+            </div>
+
+            <div class="header__menu__nav">
+              <nav>
+                <ul>
+                  <li>
+                    <div class="header__home d--flex">
+                      <i class="fas fa-home"></i>
+                      <a class="ml--2" href="index.html">Home</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="header__shop d--flex">
+                      <i class="fas fa-shop"></i>
+                      <a class="ml--2" href="shop.html">Shop</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="header__product d--flex">
+                      <i class="fas fa-box-open"></i>
+                      <a class="ml--2" href="products.html">Products</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <footer class="footer__register">
+              <i class="fas fa-user"></i>
+              <a class="ml--2" href="#">Login</a> /
+              <a href="#">Register</a>
+            </footer>
+          </div>
+
+          <!-- Mobile View Nav -->
+
+          <div class="header__logo">
+            <img src="/dist/img/logo-open-source-white.png" alt="" />
+          </div>
+          <div class="header__nav">
+            <nav>
+              <ul class="d--flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="products.html">Products</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="checkout">
+      <div class="container">
+        <div class="checkout__wrapper d--grid">
+          <div class="checkout__image">
+            <img class="active--image" src="/dist/img/Book-1.png" alt="" />
+          </div>
+          <div class="checkout__context">
+            <div class="checkout__context__details">
+              <p class="p--top">Unleash your Masterpiece</p>
+              <h2>Foundation for Life</h2>
+              <p class="mb--2">by: Bob Clinkert</p>
+              <div class="checkout__context__rating mb--2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="checkout__context__price mb--2">
+                <span class="t--bold">$70.00</span>
+              </div>
+              <div class="checkout__context__description mb--2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora obcaecati voluptatem alias eveniet excepturi aliquid
+                minus corporis! Consequatur error natus in consequuntur iste
+                repellendus, eius totam ab dignissimos modi vero!
+              </div>
+            </div>
+            <div class="checkout__context__price">
+              <div class="checkout__context__add d--flex mt--2">
+                <div class="checkout__context__quantity">
+                  <input id="quantity" type="number" value="1" min="1" />
+                </div>
+                <div class="checkout__context__button">
+                  <button class="cart--button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container">
+        <div class="description__wrapper">
+          <div class="description__button d--flex">
+            <div class="description__desc pb--1">
+              <a href="shop.html" target="_parent">Description</a>
+            </div>
+            <div class="description__reviews pb--1">
+              <a class="desc--active" href="reviews.html" target="_parent"
+                >Reviews</a
+              >
+            </div>
+          </div>
+          <div class="reviews mt--5">
+            <div class="reviews__wrapper d--grid">
+              <div class="reviews__comment">
+                <div class="reviews__count">
+                  <p class="mb--5">
+                    1 review for Unleash the Masterpiece Foundation of Life
+                  </p>
+                </div>
+                <div class="reviews__profile mt--5 d--flex">
+                  <img src="/dist/img/mac.jpg" alt="" />
+                  <div class="reviews__review ml--4">
+                    <span class="t--bold">Mac Merin</span>
+                    <span class="ml--1">/Jan 10 2022</span>
+                  </div>
+                </div>
+                <div class="reviews__paragraph">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem facere esse adipisci possimus officia voluptatum magni
+                    consequuntur? Doloribus ea, est sequi eius asperiores error
+                    similique aliquam quae expedita suscipit maiores?
+                  </p>
+                </div>
+              </div>
+
+              <div class="reviews__form">
+                <div class="reviews__heading">
+                  <p class="mb--2 t--bold">Add a Review</p>
+                  <p class="mb--2">
+                    Your emeil address will not be published. Requried fields
+                    are mark
+                    <span>*</span>
+                  </p>
+                  <div class="reviews__rating d--flex mb--2">
+                    <p>YOUR RATING</p>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="reviews__forms">
+                    <form action="">
+                      <label for="review"></label>
+                      <textarea
+                        name="review"
+                        id=""
+                        placeholder="Your review *"
+                      ></textarea>
+                      <div class="reviews__info d--flex mt--2">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Name *" />
+                        <label for="email"></label>
+                        <input
+                          class="ml--2"
+                          type="text"
+                          placeholder="Email Address *"
+                        />
+                      </div>
+                      <div class="reviews__checkbox d--flex mt--3">
+                        <label for="check"></label>
+                        <input type="checkbox" />
+                        <p class="ml--2">
+                          Save my name, email, and website inthis browser for
+                          the next time I comment.
+                        </p>
+                      </div>
+                      <div class="reviews__button mt--3">
+                        <button class="cart--button">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related">
+      <div class="container">
+        <div class="related__wrapper">
+          <span class="t--bold">Related Products</span>
+          <div class="related__list d--grid pt--2">
+            <div class="books__item">
+              <div class="books__image">
+                <img src="/dist/img/Book-2.png" alt="" />
+              </div>
+
+              <div class="books__context">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p class="p--top">Unleash your Masterpiece</p>
+                <h2>Taking the Lead</h2>
+                <p>by: Bob Clinkert</p>
+                <p>$70.00</p>
+                <button class="cart--button">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="books__item">
+              <div class="books__image">
+                <img src="/dist/img/Book-3.png" alt="" />
+              </div>
+
+              <div class="books__context">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p class="p--top">Unleash your Masterpiece</p>
+                <h2>Thriving Teams</h2>
+                <p>by: Bob Clinkert</p>
+                <p>$70.00</p>
+                <button class="cart--button">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="books__item">
+              <div class="books__image">
+                <img src="/dist/img/Book-4.png" alt="" />
+              </div>
+
+              <div class="books__context">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p class="p--top">Unleash your Masterpiece</p>
+                <h2>Organizational Integrity</h2>
+                <p>by: Bob Clinkert</p>
+                <p>$70.00</p>
+                <button class="cart--button">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="books__item">
+              <div class="books__image">
+                <img src="/dist/img/Book-5.png" alt="" />
+              </div>
+
+              <div class="books__context">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p class="p--top">Unleash your Masterpiece</p>
+                <h2>Transformational Rhythms</h2>
+                <p>by: Bob Clinkert</p>
+                <p>$70.00</p>
+                <button class="cart--button">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer--1">
+      <div class="container">
+        <div class="footer--1__wrapper d--flex">
+          <div class="footer--1__links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-globe"></i></a>
+          </div>
+          <div class="footer--1__nav">
+            <nav>
+              <ul class="d--flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="products.html">Products</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer--2">
+      <div class="container">
+        <div class="footer--2__wrapper d--flex">
+          <div class="footer--2__logo">
+            <img src="/dist/img/logo-open-source-footer.png" alt="" />
+            <p>Copyright &copy 2022 Unleash The Masterpiece</p>
+            <p>Powered by Frontline Business Solutions</p>
+          </div>
+          <div class="footer--2__shippinginfo">
+            <h3>Shipping Information</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              ipsam dignissimos perferendis ut quaerat, quas fuga numquam animi
+              officiis rerum mollitia
+            </p>
+          </div>
+          <div class="footer--2__address">
+            <div class="street d--flex">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Street name</p>
+            </div>
+            <div class="phone d--flex">
+              <i class="fas fa-phone"></i>
+              <p>578-98745-1235</p>
+            </div>
+            <div class="contact d--flex">
+              <i class="fas fa-at"></i>
+              <p>contact@email.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="mobile">
+      <div class="container">
+        <div class="mobile__wrapper d--flex">
+          <a href="index.html"><i class="fas fa-home"></i></a>
+          <a href="cart.html"
+            ><i class="fas fa-shopping-cart"
+              ><span><sup>5</sup></span></i
+            ></a
+          >
+          <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/dist/js/index.js"></script>
+  </body>
+</html>
