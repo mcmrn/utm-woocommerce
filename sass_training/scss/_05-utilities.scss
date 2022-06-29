@@ -93,7 +93,7 @@ $sizes: 1, 2, 3, 4, 5;
 }
 @each $size in $sizes {
   .mr--#{$size} {
-    margin-left: #{$size}rem;
+    margin-right: #{$size}rem;
   }
 }
 @each $size in $sizes {
@@ -109,5 +109,10 @@ $sizes: 1, 2, 3, 4, 5;
 @each $size in $sizes {
   .pr--#{$size} {
     padding-right: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pl--#{$size} {
+    padding-left: #{$size}rem;
   }
 }

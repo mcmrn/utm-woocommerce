@@ -1,22 +1,22 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  position: relative;
 }
 body {
-    font-size: 1.6rem;
-    color: $dark;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.6;
+  font-size: 1.6rem;
+  color: $dark;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
 }
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 a {
-    position: relative;
-    text-decoration: none;
-    color: $dark;
+  position: relative;
+  text-decoration: none;
+  color: $dark;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
-

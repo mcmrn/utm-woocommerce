@@ -11,12 +11,7 @@
     top: 0;
     z-index: 1;
   }
-  &__menu.show {
-    left: 0;
-    @include minMQ768 {
-      display: none;
-    }
-  }
+
   &__menu.close {
     left: -100%;
     @include minMQ768 {
@@ -35,6 +30,12 @@
     align-items: center;
     border-bottom: 1px solid #dedede;
   }
+  &__menu.show {
+    left: 0;
+    @include minMQ768 {
+      display: none;
+    }
+  }
   &__menu {
     position: relative;
     background-color: #f6fbff;
@@ -43,7 +44,7 @@
     top: 0;
     left: -100%;
     transition: 0.5s ease;
-    width: 70%;
+    width: 25rem;
     height: 100%;
     overflow-x: hidden;
     ul {
